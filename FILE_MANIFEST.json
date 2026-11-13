@@ -1,7 +1,7 @@
 {
   "generated_at_utc": "2026-09-11T02:07:41.007634+00:00",
   "hash_algorithm": "SHA-256",
-  "note": "2026-09-11 最终提交版：前后端模块化拆分完成，全量自测通过（check_project/smoke 17项/engine 30题/edge 58例/浏览器验证0错误）。",
+  "note": "GitHub 公开版：seed_data.json 已脱敏（仅保留 demo 账号及学习记录），README 补充 GitHub/本地演示说明；其余文件与 2026-09-11 最终提交版一致。",
   "excludes": [
     "FILE_MANIFEST.json",
     "__pycache__",
@@ -37,8 +37,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8298,
-      "sha256": "10d3c07a87945cfc084bc50d95f9f9501fee7ac398752c811432334b742334be"
+      "bytes": 9226,
+      "sha256": "20d2a42fad3b91b479576a7b407afd588e937bb294731134c51bb506ae363fa1"
     },
     {
       "path": "index.html",
@@ -282,8 +282,8 @@
     },
     {
       "path": "data/seed_data.json",
-      "bytes": 306250,
-      "sha256": "9f6befef684663a2baaff5b7df300e8c4855849dc96af4a64cd7324fbd06e3b6"
+      "bytes": 18920,
+      "sha256": "46c0da5fc9e9aa2a2480099e5f8407a89247a7b9161d6ffd31d18d8d7d610afa"
     },
     {
       "path": "data/training_data.json",

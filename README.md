@@ -48,7 +48,7 @@ cp .env.example .env
 
 页面、知识库和本地数学计算不需要大模型密钥。智能问答需要在 `.env` 填写实际有效的 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL`；图片问答、短信、第三方登录、支付等功能还依赖各自服务配置。未配置的外部服务不能仅凭源码包恢复。
 
-管理员初始密码通过 `ADMIN_PASSWORD` 配置；没有配置时不会创建固定密码管理员。历史种子导入默认关闭。仅在独立空库明确需要原始种子时设置 `ENABLE_DEMO_SEED=true`；`data/seed_data.json` 含账号、凭据字段及交互记录，属于历史运行数据，不应当成公开知识库发布。
+管理员初始密码通过 `ADMIN_PASSWORD` 配置；没有配置时不会创建固定密码管理员。演示种子导入默认关闭，仅在独立空库明确需要演示数据时设置 `ENABLE_DEMO_SEED=true`。本仓库的 `data/seed_data.json` 已脱敏，只保留 `demo` 演示账号及其学习记录；原始完整历史种子不随仓库公开。
 
 ## 文件分类
 
@@ -76,7 +76,7 @@ cp .env.example .env
 | `data/training_data.json` | 当前 347 条问答，供动态 Few-shot / 数据导出 |
 | `data/metadata.json` | 知识点关系和元信息，前后端共同使用 |
 | `data/model_config.json` | 原有模型 / 自学习配置 |
-| `data/seed_data.json` | 历史账号与交互种子，默认不导入、不公开挂载 |
+| `data/seed_data.json` | 脱敏后的 demo 演示账号与学习记录；默认不导入，设置 `ENABLE_DEMO_SEED=true` 后导入 |
 
 数据清理审计记录已归档到 `docs/archive/audit/data_cleanup_audit.json`。
 
