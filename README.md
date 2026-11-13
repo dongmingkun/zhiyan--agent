@@ -3,15 +3,18 @@
 本项目是面向线性代数的学科垂类智能助学系统源代码仓库，基于 2026-09-10 可核对的前端与所提供后端源码整理。首页及其 24 个同源静态依赖与原始压缩包逐字节一致；以这组文件为基础保留功能、清理重复并补齐资源。具体变更和验证范围见 [整理报告](docs/archive/audit/CLEANUP_REPORT.md)。
 
 仓库地址：<https://github.com/dongmingkun/zhiyan--agent>
+在线体验（GitHub Pages）：<https://dongmingkun.github.io/zhiyan--agent/>
 
-> **GitHub 只托管源代码，不运行 FastAPI 后端，因此本仓库地址不是在线体验地址。**
-> 在线演示请观看提交材料中的演示视频，或按下方「启动」在本地运行完整系统。
+> **GitHub Pages 托管前端页面，FastAPI 后端运行在本机并通过公网隧道接入。**
+> 演示电脑关机或隧道重启时，页面仍可打开，但登录/问答等接口会暂时不可用。
+> 完整演示也可观看提交材料中的演示视频，或按下方「启动」在本地运行。
 > “当前版本”指本次可核对的前端与所提供后端源码，不代表已取得生产数据库或模型权重。
 
 ## Demo
 
 | 项目 | 内容 |
 | --- | --- |
+| 在线体验 | <https://dongmingkun.github.io/zhiyan--agent/> |
 | 演示账号 | `demo` / `demo123` |
 | 本地地址 | `http://127.0.0.1:8000`（可用 `PORT` 修改） |
 | 移动端 | 本地启动后手机浏览器访问（PWA）；`uploads/downloads/秩研Agent-1.0.6.apk` 为 WebView 外壳，打开 GitHub 项目主页 |
