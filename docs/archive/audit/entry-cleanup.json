@@ -1,0 +1,52 @@
+[
+  {
+    "path": "index.html",
+    "action": "remove repeated cache metadata; canonical APK URL; update resource cache version"
+  },
+  {
+    "path": "sw.js",
+    "action": "bump cache version; scope obsolete cache deletion to this app"
+  },
+  {
+    "path": "uploads/apk/秩研Agent-1.0.0.apk",
+    "action": "removed old release or duplicate latest",
+    "bytes": 77667,
+    "sha256": "906960bf61418151591d908306e9eb62e022343f941bcbc5dd9f37e3d16cb44f"
+  },
+  {
+    "path": "uploads/apk/秩研Agent-1.0.1.apk",
+    "action": "removed old release or duplicate latest",
+    "bytes": 146050,
+    "sha256": "baa7ef34f8c6b796a43c059536c05422d9de0840792ff7be77535c5bd00bb40c"
+  },
+  {
+    "path": "uploads/apk/秩研Agent-1.0.2.apk",
+    "action": "removed old release or duplicate latest",
+    "bytes": 146078,
+    "sha256": "d3309ebd47503b8bfc4bd978305896bd2dea3c03b650b126c30f002872653153"
+  },
+  {
+    "path": "uploads/apk/秩研Agent-1.0.3.apk",
+    "action": "removed old release or duplicate latest",
+    "bytes": 146535,
+    "sha256": "4d7e5a29a190b0d7a2550fda1d83224ceca72bc14fc45acf831ba28e5c205a52"
+  },
+  {
+    "path": "uploads/apk/秩研Agent-1.0.4.apk",
+    "action": "removed old release or duplicate latest",
+    "bytes": 146728,
+    "sha256": "1c309e0fde55891e3e84a64f596aa98c809807a1aff24bc80d64188769ee6b94"
+  },
+  {
+    "path": "uploads/apk/秩研Agent-1.0.5.apk",
+    "action": "removed old release or duplicate latest",
+    "bytes": 147066,
+    "sha256": "8b4dfe2234124dc58566159aa06621cf204a89fbfcd381f6d4ec5489c2ec37cd"
+  },
+  {
+    "path": "uploads/apk/秩研Agent-1.0.6.apk",
+    "action": "removed old release or duplicate latest",
+    "bytes": 147142,
+    "sha256": "77e083c1dc7b29c65dd2e98e60c7274f18d888316fdeece320b728aaae85b604"
+  }
+]

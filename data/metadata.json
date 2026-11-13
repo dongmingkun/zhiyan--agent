@@ -1,0 +1,1415 @@
+{
+  "_meta": {
+    "description": "知识拓扑图谱三级节点元数据 · 包含网状关系(directed) + 三项动态系数",
+    "fields": {
+      "preDependencies": "前置依赖:A.preDependencies.targetId=B 意味着 A 学习需要先掌握 B",
+      "postRelations": "后置关联:学完 A 后,建议紧接着联动学习 targetId",
+      "preWeight": "0-1.0,1.0=核心必学前置,0.6-0.9=重要前置,0.1-0.5=弱前置",
+      "postWeight": "0-1.0,1.0=强关联紧跟,0.7-0.9=高频组合,0.1-0.6=弱关联",
+      "difficultyScore": "1-5 整数,UI 渲染为星级标签",
+      "errorProneScore": "0-1.0,易错系数,UI 渲染为红→黄渐变",
+      "examFreqScore": "0-1.0,考频权重,UI 渲染为蓝→绿渐变"
+    },
+    "invariants": [
+      "preWeight / postWeight 严格 0-1.0",
+      "A→B 关系用 A.preDependencies.targetId=B 表示(注意方向)",
+      "无循环依赖(已通过 topological sort 校验)"
+    ]
+  },
+  "tp-det-1": {
+    "preDependencies": [],
+    "postRelations": [
+      {
+        "targetId": "tp-det-2",
+        "postWeight": 0.95,
+        "desc": "行列式定义是后续性质与展开的逻辑起点"
+      },
+      {
+        "targetId": "tp-det-3",
+        "postWeight": 0.8,
+        "desc": "定义理解后直接过渡到行列式核心性质"
+      }
+    ],
+    "difficultyScore": 1,
+    "errorProneScore": 0.25,
+    "examFreqScore": 0.55,
+    "title": "行列式定义与逆序数"
+  },
+  "tp-det-2": {
+    "preDependencies": [
+      {
+        "targetId": "tp-det-1",
+        "preWeight": 1.0,
+        "desc": "必须先掌握行列式定义与逆序数,才能正确理解余子式/代数余子式的符号规则"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-det-4",
+        "postWeight": 0.9,
+        "desc": "行列展开定理建立在余子式基础上"
+      },
+      {
+        "targetId": "tp-det-5",
+        "postWeight": 0.7,
+        "desc": "展开技巧依赖余子式的熟练度"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.35,
+    "examFreqScore": 0.5,
+    "title": "余子式与代数余子式"
+  },
+  "tp-det-3": {
+    "preDependencies": [
+      {
+        "targetId": "tp-det-1",
+        "preWeight": 0.9,
+        "desc": "需要先理解行列式的符号定义才能应用核心性质"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-det-5",
+        "postWeight": 0.95,
+        "desc": "性质是常规计算方法的工具,如提公因子、行互换变号"
+      },
+      {
+        "targetId": "tp-det-6",
+        "postWeight": 0.5,
+        "desc": "克拉默法则需要理解 det=0 含义"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.4,
+    "examFreqScore": 0.65,
+    "title": "行列式核心性质"
+  },
+  "tp-det-4": {
+    "preDependencies": [
+      {
+        "targetId": "tp-det-2",
+        "preWeight": 1.0,
+        "desc": "按行/列展开公式直接依赖余子式与代数余子式"
+      },
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 0.6,
+        "desc": "需要矩阵基本概念理解 aᵢⱼ 的位置"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-det-5",
+        "postWeight": 0.6,
+        "desc": "展开定理是高阶行列式计算工具"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.45,
+    "examFreqScore": 0.4,
+    "title": "行列式行列展开定理"
+  },
+  "tp-det-5": {
+    "preDependencies": [
+      {
+        "targetId": "tp-det-3",
+        "preWeight": 1.0,
+        "desc": "化三角法、加边法、范德蒙德公式都依赖行列式性质"
+      },
+      {
+        "targetId": "tp-det-2",
+        "preWeight": 0.7,
+        "desc": "展开定理配合使用"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-2",
+        "postWeight": 0.6,
+        "desc": "逆矩阵的判定 det≠0 直接源于此"
+      },
+      {
+        "targetId": "tp-det-6",
+        "postWeight": 0.8,
+        "desc": "克拉默法则本质就是行列式求解方程组"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.6,
+    "examFreqScore": 0.85,
+    "title": "常规行列式计算方法"
+  },
+  "tp-det-6": {
+    "preDependencies": [
+      {
+        "targetId": "tp-det-1",
+        "preWeight": 0.8,
+        "desc": "需理解 Dᵢ/D 中 D 是行列式"
+      },
+      {
+        "targetId": "tp-mat-2",
+        "preWeight": 0.7,
+        "desc": "det≠0 等价于可逆,克拉默法则前提是可逆"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eq-5",
+        "postWeight": 0.7,
+        "desc": "克拉默法是方程组求解的特例"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.7,
+    "examFreqScore": 0.6,
+    "title": "克拉默法则应用"
+  },
+  "tp-mat-1": {
+    "preDependencies": [],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-2",
+        "postWeight": 0.95,
+        "desc": "矩阵运算是乘法与求逆的基础"
+      },
+      {
+        "targetId": "tp-mat-4",
+        "postWeight": 0.8,
+        "desc": "转置运算是对基本运算的扩展"
+      },
+      {
+        "targetId": "tp-mat-5",
+        "postWeight": 0.85,
+        "desc": "秩定义需要先理解矩阵基本运算"
+      },
+      {
+        "targetId": "tp-mat-7",
+        "postWeight": 0.85,
+        "desc": "初等变换建立在矩阵加法数乘基础上"
+      },
+      {
+        "targetId": "tp-eq-1",
+        "postWeight": 0.6,
+        "desc": "方程组本质就是矩阵运算"
+      }
+    ],
+    "difficultyScore": 1,
+    "errorProneScore": 0.3,
+    "examFreqScore": 0.85,
+    "title": "矩阵概念与线性运算"
+  },
+  "tp-mat-2": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 1.0,
+        "desc": "矩阵乘法是求逆运算的核心"
+      },
+      {
+        "targetId": "tp-det-1",
+        "preWeight": 0.6,
+        "desc": "逆矩阵判定需理解行列式非零"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-5",
+        "postWeight": 0.9,
+        "desc": "可逆矩阵是初等变换的关键工具"
+      },
+      {
+        "targetId": "tp-mat-6",
+        "postWeight": 0.95,
+        "desc": "伴随矩阵与逆矩阵构成 AA*=|A|E"
+      },
+      {
+        "targetId": "tp-mat-8",
+        "postWeight": 0.95,
+        "desc": "矩阵方程求解需要矩阵的逆"
+      },
+      {
+        "targetId": "tp-eq-5",
+        "postWeight": 0.6,
+        "desc": "可逆对应唯一解"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.7,
+    "examFreqScore": 0.95,
+    "title": "矩阵乘法运算与运算律"
+  },
+  "tp-mat-3": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 1.0,
+        "desc": "方阵幂是乘法多次应用"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-12",
+        "postWeight": 0.7,
+        "desc": "分块矩阵与方阵幂结合"
+      },
+      {
+        "targetId": "tp-eig-5",
+        "postWeight": 0.8,
+        "desc": "对角化求 Aⁿ 核心方法"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.35,
+    "examFreqScore": 0.7,
+    "title": "方阵幂运算"
+  },
+  "tp-mat-4": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 0.9,
+        "desc": "转置是矩阵运算的扩展,需先理解基本运算"
+      },
+      {
+        "targetId": "tp-mat-2",
+        "preWeight": 0.5,
+        "desc": "(AB)ᵀ=BᵀAᵀ 涉及乘法"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-6",
+        "postWeight": 0.6,
+        "desc": "伴随矩阵是余子式矩阵的转置"
+      },
+      {
+        "targetId": "tp-eig-3",
+        "postWeight": 0.5,
+        "desc": "相似矩阵 P⁻¹AP 含转置"
+      },
+      {
+        "targetId": "tp-qf-2",
+        "postWeight": 0.5,
+        "desc": "合同矩阵 CᵀAC 核心是转置乘法"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.4,
+    "examFreqScore": 0.65,
+    "title": "转置矩阵性质与运算"
+  },
+  "tp-mat-5": {
+    "preDependencies": [
+      {
+        "targetId": "tp-det-2",
+        "preWeight": 1.0,
+        "desc": "伴随矩阵定义直接基于余子式"
+      },
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 0.7,
+        "desc": "理解 aᵢⱼ 在矩阵中的位置"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-6",
+        "postWeight": 0.95,
+        "desc": "伴随公式 A* = |A|A⁻¹ 是逆矩阵核心工具"
+      },
+      {
+        "targetId": "tp-mat-7",
+        "postWeight": 0.7,
+        "desc": "求逆与求秩相互转换"
+      }
+    ],
+    "difficultyScore": 4,
+    "errorProneScore": 0.75,
+    "examFreqScore": 0.85,
+    "title": "伴随矩阵定义与核心性质"
+  },
+  "tp-mat-6": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-2",
+        "preWeight": 1.0,
+        "desc": "逆矩阵性质和计算都依赖求逆结果"
+      },
+      {
+        "targetId": "tp-mat-5",
+        "preWeight": 1.0,
+        "desc": "伴随公式 A*=|A|A⁻¹ 是核心工具"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-7",
+        "postWeight": 0.6,
+        "desc": "可逆的伴随判定法"
+      },
+      {
+        "targetId": "tp-mat-8",
+        "postWeight": 0.85,
+        "desc": "矩阵方程经常涉及求逆"
+      },
+      {
+        "targetId": "tp-eq-3",
+        "postWeight": 0.7,
+        "desc": "可逆矩阵对解的唯一性判定"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.65,
+    "examFreqScore": 0.85,
+    "title": "逆矩阵求解与运算律"
+  },
+  "tp-mat-7": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 0.8,
+        "desc": "初等变换是矩阵行/列操作"
+      },
+      {
+        "targetId": "tp-mat-5",
+        "preWeight": 0.6,
+        "desc": "初等变换法求逆需配合伴随矩阵"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-8",
+        "postWeight": 0.7,
+        "desc": "矩阵方程求解可用初等变换"
+      },
+      {
+        "targetId": "tp-mat-10",
+        "postWeight": 0.8,
+        "desc": "初等变换对应初等方阵"
+      },
+      {
+        "targetId": "tp-eq-1",
+        "postWeight": 0.95,
+        "desc": "齐次方程组求解的核心工具"
+      },
+      {
+        "targetId": "tp-mat-11",
+        "postWeight": 0.85,
+        "desc": "求秩的核心方法"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.5,
+    "examFreqScore": 0.85,
+    "title": "矩阵可逆性判定"
+  },
+  "tp-mat-8": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-2",
+        "preWeight": 1.0,
+        "desc": "矩阵方程求解核心是矩阵求逆"
+      },
+      {
+        "targetId": "tp-mat-6",
+        "preWeight": 0.8,
+        "desc": "AA*=|A|E 在 |A|≠0 时等价于 A⁻¹"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eq-4",
+        "postWeight": 0.7,
+        "desc": "初等变换解方程是矩阵方程的特例"
+      }
+    ],
+    "difficultyScore": 4,
+    "errorProneScore": 0.55,
+    "examFreqScore": 0.45,
+    "title": "矩阵方程求解"
+  },
+  "tp-mat-9": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 0.7,
+        "desc": "需要先理解矩阵行/列结构"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-7",
+        "postWeight": 0.85,
+        "desc": "求秩用初等变换"
+      },
+      {
+        "targetId": "tp-mat-10",
+        "postWeight": 0.8,
+        "desc": "初等方阵与秩的关系"
+      },
+      {
+        "targetId": "tp-mat-12",
+        "postWeight": 0.9,
+        "desc": "分块矩阵秩与子块秩的关系"
+      },
+      {
+        "targetId": "tp-eq-3",
+        "postWeight": 0.95,
+        "desc": "r(A)=r(A|b) 是方程组有解判定的核心"
+      },
+      {
+        "targetId": "tp-vec-7",
+        "postWeight": 0.9,
+        "desc": "向量组秩=矩阵秩"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.7,
+    "examFreqScore": 0.85,
+    "title": "矩阵初等变换与应用"
+  },
+  "tp-mat-10": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-9",
+        "preWeight": 1.0,
+        "desc": "初等方阵与初等变换是一一对应,需先掌握秩"
+      },
+      {
+        "targetId": "tp-mat-7",
+        "preWeight": 0.9,
+        "desc": "初等变换的核心地位"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-12",
+        "postWeight": 0.6,
+        "desc": "分块矩阵与初等变换联动"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.5,
+    "examFreqScore": 0.7,
+    "title": "初等方阵与矩阵等价"
+  },
+  "tp-mat-11": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-7",
+        "preWeight": 0.8,
+        "desc": "用初等变换化阶梯形求秩"
+      },
+      {
+        "targetId": "tp-mat-9",
+        "preWeight": 0.7,
+        "desc": "求秩的方法(子式法/行阶梯法)"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-12",
+        "postWeight": 0.7,
+        "desc": "分块矩阵秩的求解"
+      },
+      {
+        "targetId": "tp-eq-3",
+        "postWeight": 0.95,
+        "desc": "矩阵秩与方程组解的结构"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.7,
+    "examFreqScore": 0.85,
+    "title": "矩阵秩的求解与判定"
+  },
+  "tp-mat-12": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 0.9,
+        "desc": "分块矩阵按块运算依赖基本矩阵运算"
+      },
+      {
+        "targetId": "tp-mat-3",
+        "preWeight": 0.6,
+        "desc": "分块对角矩阵与幂运算联动"
+      },
+      {
+        "targetId": "tp-mat-9",
+        "preWeight": 0.5,
+        "desc": "分块矩阵秩与整体秩的关系"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-det-4",
+        "postWeight": 0.5,
+        "desc": "分块行列式是分块矩阵的延伸"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.6,
+    "examFreqScore": 0.55,
+    "title": "分块矩阵运算与技巧"
+  },
+  "tp-vec-1": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 0.6,
+        "desc": "向量本质是特殊的矩阵(列向量)"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-vec-2",
+        "postWeight": 0.95,
+        "desc": "线性表示建立在向量基本运算上"
+      },
+      {
+        "targetId": "tp-vec-3",
+        "postWeight": 0.9,
+        "desc": "向量组等价基于基本运算"
+      },
+      {
+        "targetId": "tp-vec-8",
+        "postWeight": 0.95,
+        "desc": "内积定义在向量空间上"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.3,
+    "examFreqScore": 0.65,
+    "title": "向量概念与基础运算"
+  },
+  "tp-vec-2": {
+    "preDependencies": [
+      {
+        "targetId": "tp-vec-1",
+        "preWeight": 0.9,
+        "desc": "需要理解向量运算"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-vec-4",
+        "postWeight": 0.85,
+        "desc": "线性相关定义基于线性表示"
+      },
+      {
+        "targetId": "tp-vec-5",
+        "postWeight": 0.6,
+        "desc": "向量组相关性判定使用线性表示"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.5,
+    "examFreqScore": 0.7,
+    "title": "向量线性组合与线性表示"
+  },
+  "tp-vec-3": {
+    "preDependencies": [
+      {
+        "targetId": "tp-vec-2",
+        "preWeight": 0.8,
+        "desc": "需要理解线性表示才能谈双向等价"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-vec-7",
+        "postWeight": 0.7,
+        "desc": "等价向量组同秩"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.4,
+    "examFreqScore": 0.7,
+    "title": "向量组等价判定"
+  },
+  "tp-vec-4": {
+    "preDependencies": [
+      {
+        "targetId": "tp-vec-2",
+        "preWeight": 1.0,
+        "desc": "线性相关定义基于线性表示"
+      },
+      {
+        "targetId": "tp-vec-1",
+        "preWeight": 0.6,
+        "desc": "向量运算基础"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-vec-5",
+        "postWeight": 0.85,
+        "desc": "相关性判定方法"
+      },
+      {
+        "targetId": "tp-vec-6",
+        "postWeight": 0.9,
+        "desc": "极大无关组基于相关性判定"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.4,
+    "examFreqScore": 0.8,
+    "title": "向量组线性相关/无关定义"
+  },
+  "tp-vec-5": {
+    "preDependencies": [
+      {
+        "targetId": "tp-vec-4",
+        "preWeight": 1.0,
+        "desc": "相关性判别建立在定义上"
+      },
+      {
+        "targetId": "tp-mat-9",
+        "preWeight": 0.6,
+        "desc": "秩判定法(r<s)需要矩阵秩"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-vec-6",
+        "postWeight": 0.7,
+        "desc": "极大无关组求解依赖相关性"
+      },
+      {
+        "targetId": "tp-eq-3",
+        "postWeight": 0.5,
+        "desc": "齐次方程组解的相关性"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.6,
+    "examFreqScore": 0.65,
+    "title": "向量组线性相关性判别方法"
+  },
+  "tp-vec-6": {
+    "preDependencies": [
+      {
+        "targetId": "tp-vec-4",
+        "preWeight": 1.0,
+        "desc": "极大无关组基于相关性定义"
+      },
+      {
+        "targetId": "tp-mat-7",
+        "preWeight": 0.7,
+        "desc": "初等行变换求极大无关组"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-vec-7",
+        "postWeight": 0.95,
+        "desc": "极大无关组元素个数=向量组秩"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.65,
+    "examFreqScore": 0.7,
+    "title": "极大线性无关组求解"
+  },
+  "tp-vec-7": {
+    "preDependencies": [
+      {
+        "targetId": "tp-vec-6",
+        "preWeight": 1.0,
+        "desc": "极大无关组个数=秩"
+      },
+      {
+        "targetId": "tp-mat-9",
+        "preWeight": 1.0,
+        "desc": "向量组秩=矩阵秩"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-vec-3",
+        "postWeight": 0.5,
+        "desc": "同秩是等价的必要条件"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.6,
+    "examFreqScore": 0.65,
+    "title": "向量组秩与矩阵秩关联"
+  },
+  "tp-vec-8": {
+    "preDependencies": [
+      {
+        "targetId": "tp-vec-1",
+        "preWeight": 0.7,
+        "desc": "内积定义在向量空间上"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-vec-9",
+        "postWeight": 1.0,
+        "desc": "施密特正交化基于内积"
+      },
+      {
+        "targetId": "tp-vec-10",
+        "postWeight": 0.85,
+        "desc": "正交矩阵定义基于内积"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.4,
+    "examFreqScore": 0.55,
+    "title": "向量内积与正交定义"
+  },
+  "tp-vec-9": {
+    "preDependencies": [
+      {
+        "targetId": "tp-vec-8",
+        "preWeight": 1.0,
+        "desc": "施密特正交化基于内积和范数"
+      },
+      {
+        "targetId": "tp-vec-1",
+        "preWeight": 0.5,
+        "desc": "向量运算基础"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-vec-10",
+        "postWeight": 0.95,
+        "desc": "正交矩阵列向量是标准正交向量组"
+      },
+      {
+        "targetId": "tp-eig-6",
+        "postWeight": 0.7,
+        "desc": "实对称矩阵正交对角化本质是施密特正交化"
+      }
+    ],
+    "difficultyScore": 4,
+    "errorProneScore": 0.8,
+    "examFreqScore": 0.8,
+    "title": "施密特正交化方法"
+  },
+  "tp-vec-10": {
+    "preDependencies": [
+      {
+        "targetId": "tp-vec-9",
+        "preWeight": 1.0,
+        "desc": "正交矩阵的列向量由施密特正交化得到"
+      },
+      {
+        "targetId": "tp-vec-8",
+        "preWeight": 0.5,
+        "desc": "内积是判定条件"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eig-6",
+        "postWeight": 0.85,
+        "desc": "实对称矩阵可被正交矩阵对角化"
+      },
+      {
+        "targetId": "tp-qf-3",
+        "postWeight": 0.7,
+        "desc": "正交变换化二次型标准形用正交矩阵"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.55,
+    "examFreqScore": 0.5,
+    "title": "正交矩阵性质与判定"
+  },
+  "tp-eq-1": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-7",
+        "preWeight": 0.9,
+        "desc": "初等行变换化阶梯形是解齐次方程组的核心方法"
+      },
+      {
+        "targetId": "tp-mat-9",
+        "preWeight": 0.6,
+        "desc": "理解 r(A) 与解空间维数的关系"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eq-2",
+        "postWeight": 0.95,
+        "desc": "非齐次方程组的解结构依赖齐次通解"
+      },
+      {
+        "targetId": "tp-eq-4",
+        "postWeight": 0.7,
+        "desc": "初等行变换解方程组扩展"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.4,
+    "examFreqScore": 0.5,
+    "title": "齐次线性方程组解的性质与结构"
+  },
+  "tp-eq-2": {
+    "preDependencies": [
+      {
+        "targetId": "tp-eq-1",
+        "preWeight": 1.0,
+        "desc": "非齐次通解 = 特解 + 齐次通解,必须先掌握齐次通解"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eq-4",
+        "postWeight": 0.9,
+        "desc": "完整解方程组的步骤"
+      },
+      {
+        "targetId": "tp-eq-5",
+        "postWeight": 0.7,
+        "desc": "公共解分析依赖解结构"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.5,
+    "examFreqScore": 0.55,
+    "title": "非齐次线性方程组解的性质与结构"
+  },
+  "tp-eq-3": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-2",
+        "preWeight": 1.0,
+        "desc": "可逆矩阵与解的唯一性"
+      },
+      {
+        "targetId": "tp-mat-9",
+        "preWeight": 1.0,
+        "desc": "r(A)=r(A|b) 是有解判定的核心,矩阵秩计算是必备基础"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eq-4",
+        "postWeight": 0.7,
+        "desc": "判定有解后再化简求解"
+      },
+      {
+        "targetId": "tp-eq-5",
+        "postWeight": 0.85,
+        "desc": "唯一解/无穷解/无解的判定"
+      },
+      {
+        "targetId": "tp-eq-6",
+        "postWeight": 0.5,
+        "desc": "公共解依赖各方程组的解的结构"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.85,
+    "examFreqScore": 0.95,
+    "title": "线性方程组解的存在性判定"
+  },
+  "tp-eq-4": {
+    "preDependencies": [
+      {
+        "targetId": "tp-eq-1",
+        "preWeight": 0.8,
+        "desc": "齐次方程组解法作为基础"
+      },
+      {
+        "targetId": "tp-eq-2",
+        "preWeight": 0.7,
+        "desc": "非齐次解结构"
+      },
+      {
+        "targetId": "tp-mat-7",
+        "preWeight": 0.6,
+        "desc": "初等变换"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eq-5",
+        "postWeight": 0.6,
+        "desc": "综合应用"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.55,
+    "examFreqScore": 0.6,
+    "title": "初等行变换解方程组"
+  },
+  "tp-eq-5": {
+    "preDependencies": [
+      {
+        "targetId": "tp-eq-3",
+        "preWeight": 1.0,
+        "desc": "解的存在性判定是讨论基础"
+      },
+      {
+        "targetId": "tp-eq-4",
+        "preWeight": 0.6,
+        "desc": "具体求解步骤"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eq-6",
+        "postWeight": 0.85,
+        "desc": "公共解判定依赖解的结构"
+      },
+      {
+        "targetId": "tp-det-6",
+        "postWeight": 0.4,
+        "desc": "唯一解情形用克拉默法则"
+      }
+    ],
+    "difficultyScore": 4,
+    "errorProneScore": 0.65,
+    "examFreqScore": 0.7,
+    "title": "方程组公共解与同解问题"
+  },
+  "tp-eq-6": {
+    "preDependencies": [
+      {
+        "targetId": "tp-eq-2",
+        "preWeight": 0.8,
+        "desc": "解结构与解空间"
+      },
+      {
+        "targetId": "tp-eq-5",
+        "preWeight": 0.7,
+        "desc": "解的结构判定"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-mat-8",
+        "postWeight": 0.4,
+        "desc": "矩阵方程的综合应用"
+      }
+    ],
+    "difficultyScore": 4,
+    "errorProneScore": 0.7,
+    "examFreqScore": 0.5,
+    "title": "矩阵与方程组的关联应用"
+  },
+  "tp-eig-1": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 0.6,
+        "desc": "矩阵与向量的基本运算"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eig-2",
+        "postWeight": 0.95,
+        "desc": "定义是求解方法的前提"
+      },
+      {
+        "targetId": "tp-eig-3",
+        "postWeight": 0.7,
+        "desc": "相似矩阵保持特征值不变"
+      },
+      {
+        "targetId": "tp-eig-7",
+        "postWeight": 0.6,
+        "desc": "对角化求 Aⁿ 需理解特征值"
+      }
+    ],
+    "difficultyScore": 1,
+    "errorProneScore": 0.35,
+    "examFreqScore": 0.65,
+    "title": "特征值与特征向量定义及性质"
+  },
+  "tp-eig-2": {
+    "preDependencies": [
+      {
+        "targetId": "tp-eig-1",
+        "preWeight": 1.0,
+        "desc": "特征值定义是求解的基础"
+      },
+      {
+        "targetId": "tp-det-4",
+        "preWeight": 0.8,
+        "desc": "解特征方程 det(λE-A)=0 需要行列式展开能力"
+      },
+      {
+        "targetId": "tp-mat-9",
+        "preWeight": 0.5,
+        "desc": "解 (λE-A)x=0 用到秩的判定"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eig-3",
+        "postWeight": 0.7,
+        "desc": "相似矩阵判定"
+      },
+      {
+        "targetId": "tp-eig-4",
+        "postWeight": 1.0,
+        "desc": "可对角化判定的核心"
+      },
+      {
+        "targetId": "tp-eig-7",
+        "postWeight": 0.9,
+        "desc": "对角化求 Aⁿ 的基础"
+      }
+    ],
+    "difficultyScore": 4,
+    "errorProneScore": 0.85,
+    "examFreqScore": 0.9,
+    "title": "特征值与特征向量求解方法"
+  },
+  "tp-eig-3": {
+    "preDependencies": [
+      {
+        "targetId": "tp-eig-1",
+        "preWeight": 0.8,
+        "desc": "特征值定义"
+      },
+      {
+        "targetId": "tp-mat-4",
+        "preWeight": 0.5,
+        "desc": "(P⁻¹AP)ᵀ=PᵀAᵀ(P⁻¹)ᵀ 涉及转置"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eig-4",
+        "postWeight": 0.95,
+        "desc": "相似是对角化的前提"
+      },
+      {
+        "targetId": "tp-mat-8",
+        "postWeight": 0.4,
+        "desc": "矩阵方程可化为相似形式"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.7,
+    "examFreqScore": 0.7,
+    "title": "相似矩阵概念与核心性质"
+  },
+  "tp-eig-4": {
+    "preDependencies": [
+      {
+        "targetId": "tp-eig-2",
+        "preWeight": 1.0,
+        "desc": "需要先求特征值与特征向量"
+      },
+      {
+        "targetId": "tp-eig-3",
+        "preWeight": 1.0,
+        "desc": "可对角化 ⇔ 与对角矩阵相似"
+      },
+      {
+        "targetId": "tp-vec-5",
+        "preWeight": 0.7,
+        "desc": "n 个线性无关特征向量依赖向量组无关性"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eig-5",
+        "postWeight": 1.0,
+        "desc": "对角化的具体计算"
+      },
+      {
+        "targetId": "tp-eig-6",
+        "postWeight": 0.7,
+        "desc": "实对称矩阵的特殊对角化"
+      },
+      {
+        "targetId": "tp-qf-2",
+        "postWeight": 0.6,
+        "desc": "二次型与特征对角化紧密关联"
+      },
+      {
+        "targetId": "tp-qf-4",
+        "postWeight": 0.5,
+        "desc": "化标准形的核心方法"
+      }
+    ],
+    "difficultyScore": 4,
+    "errorProneScore": 0.8,
+    "examFreqScore": 0.9,
+    "title": "方阵可对角化判定条件"
+  },
+  "tp-eig-5": {
+    "preDependencies": [
+      {
+        "targetId": "tp-eig-4",
+        "preWeight": 1.0,
+        "desc": "判定可对角化是计算的前提"
+      },
+      {
+        "targetId": "tp-mat-2",
+        "preWeight": 0.6,
+        "desc": "P⁻¹ 的求解"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-eig-7",
+        "postWeight": 0.95,
+        "desc": "对角化求 Aⁿ"
+      },
+      {
+        "targetId": "tp-qf-5",
+        "postWeight": 0.7,
+        "desc": "正交变换化标准形"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.65,
+    "examFreqScore": 0.55,
+    "title": "矩阵相似对角化运算"
+  },
+  "tp-eig-6": {
+    "preDependencies": [
+      {
+        "targetId": "tp-eig-5",
+        "preWeight": 1.0,
+        "desc": "普通对角化基础上加正交化要求"
+      },
+      {
+        "targetId": "tp-vec-9",
+        "preWeight": 0.8,
+        "desc": "特征向量正交化用施密特过程"
+      },
+      {
+        "targetId": "tp-vec-10",
+        "preWeight": 0.7,
+        "desc": "正交矩阵的构造"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-qf-3",
+        "postWeight": 0.95,
+        "desc": "实对称矩阵正交对角化 → 正交变换化二次型标准形"
+      },
+      {
+        "targetId": "tp-qf-5",
+        "postWeight": 0.8,
+        "desc": "化标准形核心方法"
+      }
+    ],
+    "difficultyScore": 4,
+    "errorProneScore": 0.7,
+    "examFreqScore": 0.85,
+    "title": "实对称矩阵专属性质"
+  },
+  "tp-eig-7": {
+    "preDependencies": [
+      {
+        "targetId": "tp-eig-2",
+        "preWeight": 0.9,
+        "desc": "需先掌握特征值"
+      },
+      {
+        "targetId": "tp-eig-5",
+        "preWeight": 0.8,
+        "desc": "对角化操作"
+      }
+    ],
+    "postRelations": [],
+    "difficultyScore": 3,
+    "errorProneScore": 0.5,
+    "examFreqScore": 0.45,
+    "title": "对角化求矩阵幂与矩阵"
+  },
+  "tp-qf-1": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-1",
+        "preWeight": 0.6,
+        "desc": "二次型矩阵是矩阵的特例"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-qf-4",
+        "postWeight": 0.85,
+        "desc": "标准形求解建立在矩阵表示上"
+      },
+      {
+        "targetId": "tp-qf-5",
+        "postWeight": 0.6,
+        "desc": "正交变换化标准形需要矩阵"
+      }
+    ],
+    "difficultyScore": 2,
+    "errorProneScore": 0.45,
+    "examFreqScore": 0.7,
+    "title": "二次型定义与矩阵表示"
+  },
+  "tp-qf-2": {
+    "preDependencies": [
+      {
+        "targetId": "tp-mat-4",
+        "preWeight": 0.5,
+        "desc": "合同 CᵀAC 需要转置乘法"
+      },
+      {
+        "targetId": "tp-eig-4",
+        "preWeight": 0.5,
+        "desc": "相似对角化是合同等价的具体情形"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-qf-3",
+        "postWeight": 0.85,
+        "desc": "合同/相似/等价三者区分"
+      },
+      {
+        "targetId": "tp-qf-6",
+        "postWeight": 0.6,
+        "desc": "合同惯性定理"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.55,
+    "examFreqScore": 0.55,
+    "title": "矩阵合同概念与判定"
+  },
+  "tp-qf-3": {
+    "preDependencies": [
+      {
+        "targetId": "tp-qf-2",
+        "preWeight": 0.9,
+        "desc": "合同/相似/等价三者区分"
+      },
+      {
+        "targetId": "tp-eig-6",
+        "preWeight": 0.8,
+        "desc": "实对称矩阵正交对角化是正交变换的核心"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-qf-5",
+        "postWeight": 0.7,
+        "desc": "化标准形方法对比"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.65,
+    "examFreqScore": 0.55,
+    "title": "等价/相似/合同矩阵三者区分"
+  },
+  "tp-qf-4": {
+    "preDependencies": [
+      {
+        "targetId": "tp-qf-1",
+        "preWeight": 0.9,
+        "desc": "标准形是矩阵表示的变形"
+      },
+      {
+        "targetId": "tp-eig-4",
+        "preWeight": 0.5,
+        "desc": "正交变换化标准形"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-qf-5",
+        "postWeight": 0.7,
+        "desc": "标准形求解"
+      },
+      {
+        "targetId": "tp-qf-6",
+        "postWeight": 0.85,
+        "desc": "惯性定理与规范形"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.5,
+    "examFreqScore": 0.6,
+    "title": "二次型标准形求解"
+  },
+  "tp-qf-5": {
+    "preDependencies": [
+      {
+        "targetId": "tp-qf-3",
+        "preWeight": 0.8,
+        "desc": "合同矩阵区分"
+      },
+      {
+        "targetId": "tp-qf-4",
+        "preWeight": 0.8,
+        "desc": "标准形基础"
+      },
+      {
+        "targetId": "tp-eig-6",
+        "preWeight": 0.7,
+        "desc": "正交变换化标准形"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-qf-6",
+        "postWeight": 0.5,
+        "desc": "惯性指数"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.55,
+    "examFreqScore": 0.4,
+    "title": "正交变换化二次型标准形"
+  },
+  "tp-qf-6": {
+    "preDependencies": [
+      {
+        "targetId": "tp-qf-4",
+        "preWeight": 0.9,
+        "desc": "标准形是惯性指数的基础"
+      },
+      {
+        "targetId": "tp-qf-5",
+        "preWeight": 0.5,
+        "desc": "化标准形的具体方法"
+      }
+    ],
+    "postRelations": [
+      {
+        "targetId": "tp-qf-7",
+        "postWeight": 0.95,
+        "desc": "正定二次型判定需要惯性指数"
+      }
+    ],
+    "difficultyScore": 3,
+    "errorProneScore": 0.6,
+    "examFreqScore": 0.55,
+    "title": "配方法化简二次型"
+  },
+  "tp-qf-7": {
+    "preDependencies": [
+      {
+        "targetId": "tp-qf-6",
+        "preWeight": 1.0,
+        "desc": "惯性指数与规范形是正定判定的必要工具"
+      },
+      {
+        "targetId": "tp-eig-1",
+        "preWeight": 0.6,
+        "desc": "特征值全正是正定的一种判据"
+      }
+    ],
+    "postRelations": [],
+    "difficultyScore": 4,
+    "errorProneScore": 0.8,
+    "examFreqScore": 0.95,
+    "title": "正定二次型与正定矩阵判定"
+  }
+}

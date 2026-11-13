@@ -1,0 +1,207 @@
+{
+  "deletedFiles": [
+    {
+      "file": "js/app.js",
+      "bytes": 146941,
+      "reason": "Legacy version, not loaded by current index.html; v3.19 file retained."
+    },
+    {
+      "file": "js/auth.js",
+      "bytes": 5740,
+      "reason": "Legacy version, not loaded by current index.html; v3.19 file retained."
+    },
+    {
+      "file": "js/quiz-system.js",
+      "bytes": 9887,
+      "reason": "Legacy version, not loaded by current index.html; v3.19 file retained."
+    },
+    {
+      "file": "js/quiz-ui.js",
+      "bytes": 54428,
+      "reason": "Legacy version, not loaded by current index.html; v3.19 file retained."
+    },
+    {
+      "file": "css/style.css",
+      "bytes": 155852,
+      "reason": "Legacy version, not loaded by current index.html; v3.19 file retained."
+    }
+  ],
+  "jsRemovals": [
+    {
+      "file": "js/app.v3.19.js",
+      "method": "scrollToBubbleTop",
+      "removedOriginalLines": [
+        6128,
+        6134
+      ],
+      "retainedOriginalLines": [
+        6575,
+        6578
+      ],
+      "removedBytes": 427,
+      "proof": "Canonical AST equals original with only the overwritten pure method removed; node --check passed."
+    },
+    {
+      "file": "js/quiz-ui.v3.19.js",
+      "method": "_esc",
+      "removedOriginalLines": [
+        1979,
+        1981
+      ],
+      "retainedOriginalLines": [
+        2385,
+        2387
+      ],
+      "removedBytes": 120,
+      "proof": "Canonical AST equals original with only the overwritten pure method removed; node --check passed."
+    }
+  ],
+  "cssRemovals": [
+    {
+      "file": "css/style.v3.19.css",
+      "type": "identical-rule",
+      "selector": ".app-container.fullscreen ~ .bottom-nav",
+      "removedOriginalLines": [
+        434,
+        434
+      ],
+      "retainedOriginalLines": [
+        13056,
+        13056
+      ],
+      "scope": "root",
+      "removedBytes": 69
+    },
+    {
+      "file": "css/style.v3.19.css",
+      "type": "identical-rule",
+      "selector": "#chat-send:active",
+      "removedOriginalLines": [
+        726,
+        726
+      ],
+      "retainedOriginalLines": [
+        733,
+        733
+      ],
+      "scope": "root",
+      "removedBytes": 47
+    },
+    {
+      "file": "css/style.v3.19.css",
+      "type": "identical-rule",
+      "selector": ".mobile-mode .knowledge-layout",
+      "removedOriginalLines": [
+        7062,
+        7062
+      ],
+      "retainedOriginalLines": [
+        7134,
+        7134
+      ],
+      "scope": "root",
+      "removedBytes": 58
+    },
+    {
+      "file": "css/style.v3.19.css",
+      "type": "identical-rule",
+      "selector": "#admin-tab-users .admin-pagination-btn,\n  #admin-pagination button",
+      "removedOriginalLines": [
+        11926,
+        11929
+      ],
+      "retainedOriginalLines": [
+        11935,
+        11938
+      ],
+      "scope": "@media (max-width: 768px)",
+      "removedBytes": 136
+    },
+    {
+      "file": "css/style.v3.19.css",
+      "type": "identical-rule",
+      "selector": ".sidebar .nav-group.open .nav-chevron",
+      "removedOriginalLines": [
+        14381,
+        14381
+      ],
+      "retainedOriginalLines": [
+        15217,
+        15217
+      ],
+      "scope": "root",
+      "removedBytes": 68
+    },
+    {
+      "file": "css/style.v3.19.css",
+      "type": "identical-rule",
+      "selector": "[data-theme=\"dark\"] .sidebar .nav-group .nav-sub .nav-item",
+      "removedOriginalLines": [
+        14414,
+        14416
+      ],
+      "retainedOriginalLines": [
+        15237,
+        15237
+      ],
+      "scope": "root",
+      "removedBytes": 80
+    },
+    {
+      "file": "css/style.v3.19.css",
+      "type": "identical-declaration",
+      "selector": "#chat-input",
+      "property": "font-family",
+      "value": "inherit",
+      "removedOriginalLines": [
+        676,
+        676
+      ],
+      "retainedOriginalLines": [
+        685,
+        685
+      ],
+      "removedBytes": 21
+    },
+    {
+      "file": "css/ui-polish.css",
+      "type": "identical-rule",
+      "selector": ".snotes-header",
+      "removedOriginalLines": [
+        587,
+        593
+      ],
+      "retainedOriginalLines": [
+        1055,
+        1061
+      ],
+      "scope": "root",
+      "removedBytes": 229
+    },
+    {
+      "file": "css/ui-polish.css",
+      "type": "identical-rule",
+      "selector": ".snotes-toc-chapter-title:hover",
+      "removedOriginalLines": [
+        622,
+        622
+      ],
+      "retainedOriginalLines": [
+        1160,
+        1160
+      ],
+      "scope": "root",
+      "removedBytes": 78
+    }
+  ],
+  "verification": [
+    {
+      "file": "css/style.v3.19.css",
+      "proof": "PostCSS AST after targeted removals equals reparsed output; only earlier byte-identical declarations/rules with the same parent scope were removed."
+    },
+    {
+      "file": "css/ui-polish.css",
+      "proof": "PostCSS AST after targeted removals equals reparsed output; only earlier byte-identical declarations/rules with the same parent scope were removed."
+    }
+  ]
+}

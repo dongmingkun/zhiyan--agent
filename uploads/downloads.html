@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>秩研Agent · 线性代数智能助学系统 — 成果下载中心</title>
+<style>
+  :root { --primary:#4f46e5; --primary-dark:#4338ca; --bg:#f8fafc; --card:#fff; --text:#1e293b; --muted:#64748b; --border:#e2e8f0; --green:#16a34a; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  /* ===== Hero：白底 + 主色标题 ===== */
+  .hero { background:#ffffff; border-bottom:1px solid var(--border); padding:48px 24px 40px; text-align:center; }
+  .hero .hero-mark { width:56px; height:56px; margin:0 auto 16px; color:var(--primary); }
+  .hero h1 { font-size:30px; font-weight:800; letter-spacing:.5px; margin-bottom:10px; color:var(--primary); }
+  .hero p { font-size:15px; color:var(--muted); max-width:640px; margin:0 auto; }
+  .hero .meta-line { margin-top:14px; font-size:13px; color:var(--muted); }
+  .wrap { max-width:960px; margin:-20px auto 0; padding:0 16px 48px; }
+  .card { background:var(--card); border-radius:14px; border:1px solid var(--border); box-shadow:0 2px 8px rgba(15,23,42,.08); padding:24px; margin-bottom:20px; }
+  .card h2 { font-size:18px; font-weight:700; margin-bottom:14px; display:flex; align-items:center; gap:8px; color:#1e293b; }
+  .card h2 svg { color:var(--primary); }
+  .dl-row { display:flex; align-items:center; gap:16px; padding:14px 0; border-bottom:1px solid var(--border); flex-wrap:wrap; }
+  .dl-row:last-child { border-bottom:none; }
+  .dl-icon { width:46px; height:46px; border-radius:10px; display:flex; align-items:center; justify-content:center; color:var(--primary); background:#eef2ff; flex-shrink:0; }
+  .dl-info { flex:1; min-width:220px; }
+  .dl-name { font-weight:700; font-size:14.5px; }
+  .dl-desc { font-size:12.5px; color:var(--muted); margin-top:2px; }
+  .dl-meta { font-size:11.5px; color:var(--muted); margin-top:2px; }
+  .dl-btn { display:inline-flex; align-items:center; gap:6px; background:var(--primary); color:#fff; border:none; padding:9px 20px; border-radius:10px; font-size:13.5px; font-weight:600; cursor:pointer; text-decoration:none; transition:background .15s,transform .15s; }
+  .dl-btn:hover { background:var(--primary-dark); transform:translateY(-1px); }
+  .dl-btn svg { width:15px; height:15px; }
+  .dl-btn.green { background:var(--green); }
+  .dl-btn.gray { background:#475569; }
+  .features { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:12px; }
+  .feat { background:#f8fafc; border:1px solid var(--border); border-radius:10px; padding:14px; }
+  .feat b { font-size:13.5px; display:flex; align-items:center; gap:6px; margin-bottom:4px; }
+  .feat b svg { color:var(--primary); }
+  .feat span { font-size:12px; color:var(--muted); }
+  .note { background:#fefce8; border:1px solid #fde68a; border-radius:10px; padding:12px 14px; font-size:13px; color:#713f12; margin-top:14px; }
+  .footer { text-align:center; color:var(--muted); font-size:12.5px; padding:24px 16px 40px; }
+  a.live { color:var(--primary); font-weight:600; text-decoration:none; border-bottom:1px dashed var(--primary); }
+  ul.log { list-style:none; padding:0; font-size:13.5px; display:grid; gap:8px; }
+  ul.log li { padding-left:14px; position:relative; color:#334155; }
+  ul.log li::before { content:''; position:absolute; left:0; top:.6em; width:6px; height:6px; border-radius:50%; background:var(--primary); }
+  ul.log li .d { color:var(--muted); font-weight:600; margin-right:4px; }
+  ul.tech { list-style:none; padding:0; font-size:13.5px; display:grid; gap:8px; }
+  ul.tech li { padding-left:18px; position:relative; color:#334155; }
+  ul.tech li::before { content:''; position:absolute; left:2px; top:.6em; width:8px; height:8px; border-radius:2px; background:#eef2ff; border:1px solid var(--primary); }
+</style>
+</head>
+<body>
+<!-- ===== 站内 SVG 线性图标 sprite ===== -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-la-mark" viewBox="0 0 32 32"><path d="M9 6 L4.5 8.5 L4.5 23.5 L9 26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 6 L27.5 8.5 L27.5 23.5 L23 26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 12 L17 12 M15 12 L17 14 M15 14 L17 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 19.5 L21 19.5 M11 22.5 L17 22.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18 M12 3a15.3 15.3 0 0 1 4 9 15.3 15.3 0 0 1-4 9 15.3 15.3 0 0 1-4-9 15.3 15.3 0 0 1 4-9z" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="ic-folder" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 18h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="ic-pc" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 21h8 M12 17v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="ic-paper" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z M14 2v6h6 M9 13h6 M9 17h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-dl" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M7 10l5 5 5-5 M12 15V3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-scroll" viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z M8 7h8 M8 11h8 M8 15h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-cube" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z M3.27 6.96L12 12.01l8.73-5.05 M12 22.08V12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-bolt" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-graph" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="18" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 7.5L11 16 M16 7.5L13 16 M8.5 6h7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="ic-viz" viewBox="0 0 24 24"><path d="M3 3v18h18 M7 15l4-4 3 3 5-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-engine" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 12l3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-flow" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="15" y="3" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="9" y="15" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M6 9v3a2 2 0 0 0 2 2h4 M18 9v3a2 2 0 0 1-2 2h-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="ic-quiz" viewBox="0 0 24 24"><path d="M9 11l3 3 8-8 M20 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></symbol>
+  <symbol id="ic-friends" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<div class="hero">
+  <svg class="hero-mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-la-mark"/></svg>
+  <h1>秩研Agent · 线性代数智能助学系统</h1>
+  <p>面向一流学科建设的学科垂类大模型与创新应用开发竞赛（赛题编号 XH-202620）参赛成果</p>
+  <div class="meta-line">版本 v=20260906c · 更新于 2026-09-04</div>
+</div>
+
+<div class="wrap">
+
+  <!-- 03 作品 Demo -->
+  <div class="card">
+    <h2><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-globe"/></svg> 03 作品 Demo（在线体验）</h2>
+    <div style="font-size:14px;">
+      <div class="dl-row" style="border-bottom:none;padding-top:0;">
+        <div class="dl-info">
+          <div class="dl-name">体验地址</div>
+          <div class="dl-desc">直接访问在线站点，免安装即可体验全部功能</div>
+        </div>
+        <a class="dl-btn green" href="/" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-globe"/></svg> 打开体验地址</a>
+      </div>
+      <div style="margin-top:4px;font-size:12.5px;color:var(--muted);">
+        <b>使用说明（登录方式）：</b>点击登录后，选择「一键演示账号登录」（<code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;">demo / demo123</code>）即可体验含完整数据的演示账号；也可自行注册新账号从零体验。
+      </div>
+      <div style="margin-top:6px;font-size:12.5px;color:var(--muted);">
+        <b>核心功能入口导览：</b>智能问答（自然语言提问 + 分步讲解）→ 可验证计算引擎（符号 + 数值双引擎）→ 知识体系/拓扑图谱 → 练习题库 + 错题本 → 学习画像（学情精准诊断 + 闯关地图）→ 教学资源。
+      </div>
+    </div>
+  </div>
+
+  <!-- 成果下载 -->
+  <div class="card">
+    <h2><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-folder"/></svg> 成果下载（评审提交材料）</h2>
+
+    <div class="dl-row">
+      <div class="dl-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-phone"/></svg></div>
+      <div class="dl-info">
+        <div class="dl-name">Android APP（APK · v1.0.6）</div>
+        <div class="dl-desc">安卓手机安装包：WebView 套壳 + 状态栏/导航栏安全区适配 + 返回导航 + 最新页面</div>
+        <div class="dl-meta">大小 144KB · Android 7.0+ · 已签名可直接安装</div>
+      </div>
+      <a class="dl-btn green" href="/uploads/downloads/秩研Agent-1.0.6.apk" download><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-dl"/></svg> APP下载</a>
+    </div>
+  </div>
+
+  <!-- 典型问题测试验证 -->
+  <div class="card">
+    <h2><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-check"/></svg> 典型问题测试验证</h2>
+    <ul class="log" style="font-size:13.5px;">
+      <li>
+        <b>① 特征值与特征向量</b>　<span class="d">A = [[2,1],[1,2]]</span>　→　λ₁ = 3（v = [1,1]ᵀ）、λ₂ = 1（v = [1,−1]ᵀ）；回代 Av = λv 校验通过，<b>verified = true</b>，符号/数值相对误差 <code>8.88e-16</code>
+      </li>
+      <li>
+        <b>② 矩阵求逆</b>　<span class="d">同矩阵</span>　→　det(A) = 3，A⁻¹ = <span style="font-family:ui-monospace,Menlo,monospace;">[[2/3, −1/3],[−1/3, 2/3]]</span>；SymPy 符号解与 NumPy 数值解一致，<b>verified = true</b>
+      </li>
+      <li>
+        <b>③ 智能问答</b>　<span class="d">RAG 命中同济六版第四章知识点</span>　→　答案附引用来源与 <b>「AI 生成内容」</b>标识
+      </li>
+    </ul>
+    <div class="note">
+      ✅ 全部案例由 <b>SymPy + NumPy 双引擎交叉验证</b>，可运行代码可复现（详见《对比实验报告》）。
+    </div>
+  </div>
+
+  <!-- 功能版图 -->
+  <div class="card">
+    <h2><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-cube"/></svg> 核心功能版图（17 个模块）</h2>
+    <div class="features">
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-chat"/></svg> 智能问答</b><span>三模式（直接解答/分步讲解/引导学习）+ 领域守门 + 目录锚点</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-image"/></svg> 图片问答</b><span>科大讯飞星火视觉模型 + OpenAI 兼容 + RapidOCR 三级降级</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-book"/></svg> 知识体系</b><span>6 大章节 48 个知识点，参考同济版《线性代数》</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-graph"/></svg> 知识拓扑图谱</b><span>力导向图 + 前置依赖权重 + 聚焦模式</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-engine"/></svg> 可验证计算引擎</b><span>16 种矩阵运算，SymPy+NumPy 交叉验证 + 回代校验</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-viz"/></svg> 几何可视化</b><span>向量运算/线性变换 2D-3D 动态动画</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-quiz"/></svg> 测试中心</b><span>在线测验 + 练习题库 + 错题本</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-radar"/></svg> 学习画像</b><span>八维能力雷达 + 情绪曲线 + 闯关地图</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-book"/></svg> 教学资源</b><span>参考文献条目 + 自编样卷 + 教材引用</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-friends"/></svg> 社区</b><span>好友 / 群组 / 动态 / 私信</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-flow"/></svg> 智能工作流</b><span>出题 / 解题 / 诊断条件分支</span></div>
+      <div class="feat"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-gear"/></svg> 管理后台</b><span>用户管理 + 开发者控制台 + 数据看板</span></div>
+    </div>
+  </div>
+
+  <!-- 技术亮点 -->
+  <div class="card">
+    <h2><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><use href="#ic-bolt"/></svg> 技术亮点</h2>
+    <ul class="tech">
+      <li>安全加固：代码执行沙箱 + 登录鉴权 + 频率限制 + 领域守门</li>
+      <li>RAG 知识库：本地检索 + 动态 Few-shot + 引用溯源弹窗</li>
+      <li>多模态三级降级：星火视觉 → OpenAI 兼容 → RapidOCR + 主 LLM</li>
+      <li>PWA + APK 双形态：离线可用、安全区适配、返回导航</li>
+      <li>计算交叉验证：所有数学结果 SymPy 符号解 + NumPy 数值解 + 回代验证</li>
+      <li>性能优化：流式 SSE + 冷启动预热 + 心跳包，首字延迟大幅降低</li>
+    </ul>
+    <div class="note">
+      演示提示：完整源代码由团队<b>现场提供</b>（提交时随作品一并交付），本地运行 <code style="background:#f1f5f9;padding:2px 6px;border-radius:4px;">python run.py</code> 即可启动（依赖见 requirements）。
+      默认演示账号：<b>demo / demo123</b>（含完整学习画像、错题本、问答历史数据）。
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  秩研Agent · 线性代数智能助学系统 © 2026 &nbsp;|&nbsp; 科大讯飞竞赛 XH-202620 &nbsp;|&nbsp; 版本 v=20260906c
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+.env
+auth_secret.key
+*.db
+*.db-journal
+backups/
+__pycache__/
+*.pyc
+.git
+.gitignore
+node_modules/
+*.log
+
+work/
+.venv/
+*.db-shm
+*.db-wal

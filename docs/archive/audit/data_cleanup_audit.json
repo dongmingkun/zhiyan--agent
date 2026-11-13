@@ -1,0 +1,44 @@
+{
+  "cleanup_time": "2026-08-18T23:53:35.605200",
+  "version": "v20260897",
+  "reason": "赛题要求:知识库去「自进化生成」(AI 生成)条目,改用教材原文或显式标注 AI 生成",
+  "deleted_records": [
+    {
+      "id": 5,
+      "user_id": 2,
+      "knowledge_point": "自进化生成 v1",
+      "mastery_score": 52.0,
+      "attempts": 1,
+      "correct_attempts": 1,
+      "avg_response_time": 0.0,
+      "last_practiced": "2026-08-16T10:38:00.755865",
+      "forgetting_score": 1.0,
+      "updated": "2026-08-16T10:38:00.755865"
+    },
+    {
+      "id": 17,
+      "user_id": 1,
+      "knowledge_point": "自进化生成 v48",
+      "mastery_score": 52.0,
+      "attempts": 1,
+      "correct_attempts": 1,
+      "avg_response_time": 0.0,
+      "last_practiced": "2026-08-18T14:34:49.441659",
+      "forgetting_score": 1.0,
+      "updated": "2026-08-18T14:34:49.441659"
+    },
+    {
+      "id": 18,
+      "user_id": 1,
+      "knowledge_point": "自进化生成 v20",
+      "mastery_score": 52.0,
+      "attempts": 1,
+      "correct_attempts": 1,
+      "avg_response_time": 0.0,
+      "last_practiced": "2026-08-18T14:34:49.441659",
+      "forgetting_score": 1.0,
+      "updated": "2026-08-18T14:34:49.441659"
+    }
+  ],
+  "deleted_count": 3
+}

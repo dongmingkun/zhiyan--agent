@@ -1,0 +1,112 @@
+[
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/icon-180.png",
+    "status": 200,
+    "content_type": "image/png",
+    "last_modified": "Sat, 22 Aug 2026 06:16:04 GMT",
+    "path": "icon-180.png",
+    "bytes": 23576,
+    "sha256": "226857472cf8cb1f1211d3120ee3fb42713cc59f878f39f23c1519686071e82a",
+    "local_match": false
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/icon-192.png",
+    "status": 200,
+    "content_type": "image/png",
+    "last_modified": "Sat, 22 Aug 2026 06:16:03 GMT",
+    "path": "icon-192.png",
+    "bytes": 25616,
+    "sha256": "0af390518223363615f60cb1a0c005479d06f0ce434782de0715854d5803f616",
+    "local_match": false
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/icon-512.png",
+    "status": 200,
+    "content_type": "image/png",
+    "last_modified": "Sat, 22 Aug 2026 06:16:03 GMT",
+    "path": "icon-512.png",
+    "bytes": 84701,
+    "sha256": "ed62f525b3336b7aa6cb0c72f0b3a8808d5e067534def1fb6df78cb19640b3d8",
+    "local_match": false
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_AMS-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Caligraphic-Bold.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Caligraphic-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Fraktur-Bold.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Fraktur-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Main-Bold.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Main-BoldItalic.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Main-Italic.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Main-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Math-BoldItalic.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Math-Italic.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_SansSerif-Bold.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_SansSerif-Italic.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_SansSerif-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Script-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Size1-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Size2-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Size3-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Size4-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/fonts/KaTeX_Typewriter-Regular.ttf",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

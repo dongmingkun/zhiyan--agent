@@ -1,0 +1,330 @@
+/* style-02-layout.css —— 原 css/style.v3.19.css 第 111–438 行分节（2026-09-11），
+ * 按顶层分节头切分，加载顺序与层叠顺序不变。 */
+/* ============ 主布局 ============ */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* ============ 侧边栏 ============ */
+.sidebar {
+  width: 240px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: none !important; /* 游客态隐藏侧边栏；登录后由 body.logged-in 恢复 */
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+body.logged-in .sidebar { display: flex !important; }
+
+.sidebar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5 0%, #4338ca 100%);
+  box-shadow: var(--shadow-md);
+}
+
+.sidebar-header {
+  padding: 24px 18px 20px;
+  border-bottom: 1px solid var(--border-light);
+}
+/* v=20260824r 抽屉开启：把 logo 整体下移到"菜单"按钮之下，避免与左上角 pill 重合 */
+#app-container.sidebar-open .sidebar-header {
+  padding-top: 64px;
+}
+body.sidebar-open .sidebar-header { padding-top: 64px; }
+/* 桌面端常驻态（无 pill）无需让位 */
+@media (min-width: 769px) {
+  #app-container.sidebar-open .sidebar-header,
+  body.sidebar-open .sidebar-header { padding-top: 24px; }
+}
+
+/* v=20260824r 侧边栏 wordmark 重设计：扁平编辑风格（细线条 + 暖灰底 + 双行标题），不再像 AI 圆形徽章 */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 14px;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  border: 1px solid rgba(99, 102, 241, .14);
+  border-radius: 14px;
+  box-shadow: var(--shadow-sm);
+  min-height: 56px;
+}
+
+.sidebar-logo .logo-icon {
+  flex: 0 0 auto;
+  width: 36px; height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #4f46e5;
+}
+.sidebar-logo .logo-mark {
+  display: block;
+  width: 32px; height: 32px;
+}
+.sidebar-logo .sidebar-logo-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+  line-height: 1.15;
+}
+.sidebar-logo .logo-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: 0.2px;
+}
+.sidebar-logo .logo-sub {
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #64748b;
+  margin-top: 2px;
+  letter-spacing: 0.4px;
+}
+.sidebar-subtitle {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-top: 6px;
+  padding-left: 52px;
+  letter-spacing: 0.3px;
+}
+
+.nav-list {
+  flex: 1;
+  padding: 16px 12px;
+  overflow-y: auto;
+}
+
+.nav-section-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-tertiary);
+  padding: 8px 14px 6px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 3px;
+  position: relative;
+}
+
+.nav-item:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.nav-item.active {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 12px var(--primary-glow);
+}
+
+.nav-item .nav-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: currentColor;
+}
+.nav-item .nav-icon svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.nav-item .nav-badge {
+  margin-left: auto;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 14px;
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.nav-item.active .nav-badge {
+  background: rgba(255,255,255,0.25);
+  color: white;
+}
+
+/* 导航项右侧注释（如「学习画像 · 学情精准诊断」） */
+.nav-item .nav-item-note {
+  margin-left: auto;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-muted, #9ca3af);
+  letter-spacing: .2px;
+  white-space: nowrap;
+}
+.nav-item.active .nav-item-note {
+  color: rgba(255,255,255,0.7);
+}
+
+.sidebar-status {
+  padding: 10px 16px;
+  font-size: 11px;
+  color: #16a34a;
+  text-align: center;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ecfdf5, #ffffff);
+  border-top: 1px solid #f1f5f9;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.sidebar-status::before {
+  content: '';
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #16a34a;
+  box-shadow: 0 0 6px rgba(22, 163, 74, .6);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.5; transform: scale(0.8); }
+}
+
+.sidebar-footer {
+  padding: 12px 16px 14px;
+  font-size: 10px;
+  color: #94a3b8;
+  text-align: center;
+  line-height: 1.6;
+}
+.sidebar-footer .ai-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  color: #92400e;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  border: 1px solid #fbbf24;
+  letter-spacing: .3px;
+}
+
+.ai-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 14px;
+  background: var(--warning-light);
+  color: var(--warning);
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* ============ 主内容区（flex 容器：横向布局 sidebar + view-panel 垂直堆叠） ============ */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.view-panel {
+  display: none;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.view-panel.active {
+  display: flex;
+  flex-direction: column;
+  /* 高度自适应内容（不被 flex:1 强制撑满），内部独立滚动 */
+  overflow-y: auto;
+  overflow-x: hidden;
+  animation: viewIn 0.35s ease;
+}
+
+@keyframes viewIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ 全屏模式（从首页进入，隐藏侧边栏） ============ */
+.app-container.fullscreen .sidebar { display: none; }
+.app-container.fullscreen .main-content { width: 100%; }
+
+.app-container.fullscreen .view-panel.active {
+  animation: fsViewIn 0.3s ease;
+}
+@keyframes fsViewIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 返回首页栏 */
+.back-home-bar {
+  display: flex; align-items: center; gap: 12px;
+  padding: 8px 20px; border-bottom: 1px solid var(--border);
+  background: var(--surface); flex-shrink: 0; z-index: 5;
+}
+.back-home-btn {
+  border: none; background: transparent; color: var(--primary); cursor: pointer;
+  font-size: 13px; font-weight: 600; padding: 6px 10px; border-radius: 6px;
+  transition: all .18s;
+}
+.back-home-btn:hover { background: var(--primary-light); }
+.back-home-title {
+  flex: 1; font-size: 14px; font-weight: 700; color: var(--text); text-align: center;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.back-home-close {
+  border: none; background: transparent; color: var(--text-tertiary); cursor: pointer;
+  font-size: 18px; padding: 4px 8px; border-radius: 6px; transition: all .18s;
+}
+.back-home-close:hover { background: var(--surface); color: var(--text); }
+
+/* 全屏视图内容区：内部可滚动 */
+.app-container.fullscreen .view-panel.active {
+  /* 沿用通用 .view-panel.active 的 flex 布局（不再额外强制高度） */
+  flex: 1;
+  min-height: 0;
+}
+
+/* 全屏模式隐藏移动端底部 tab、用户徽章 */
+.app-container.fullscreen .bottom-tabs { display: none !important; }
+.app-container.fullscreen .user-badge { display: none !important; }
+/* v=20260922h 修复:全屏视图(如管理后台)下也隐藏底部 tab 栏,防止遮挡内容
+   注意:bottom-nav 是 app-container 的兄弟元素(body 直接子元素),所以用 ~ 选择器
+   重要:必须 !important,否则被后写的 .mobile-mode .bottom-nav { display:flex } 覆盖 */
+
+/* v=20260922h 全屏视图在移动端增加底部留白,避免内容贴底截断 */
+.app-container.fullscreen #chat-messages { padding-bottom: 80px; }
+.app-container.fullscreen .view-panel.active { padding-bottom: 80px; }
+

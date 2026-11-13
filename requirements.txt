@@ -1,0 +1,14 @@
+# Core web service (preserves the original dependency policy).
+fastapi
+uvicorn[standard]
+openai
+python-dotenv
+python-multipart
+alibabacloud-dysmsapi20170525
+alibabacloud-tea-openapi
+numpy
+sympy
+matplotlib
+pillow
+qrcode[pil]
+websockets

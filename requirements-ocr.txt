@@ -1,0 +1,3 @@
+# Optional local OCR; the web service degrades gracefully without it.
+-r requirements.txt
+rapidocr-onnxruntime

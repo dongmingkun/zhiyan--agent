@@ -1,0 +1,100 @@
+{
+  "model_config": {
+    "version": "v20260824l",
+    "model": "spark-x (Spark X2)",
+    "base_url": "https://spark-api-open.xf-yun.com/v1",
+    "access": "星火开放平台 HTTP 服务接口（OpenAI 兼容协议），APIKey/APIPassword 认证",
+    "model_service_id": "（提交时填写：星火控制台「HTTP 服务接口认证信息」中的模型 ServiceID）",
+    "fallback_models": [
+      "deepseek-chat (DeepSeek)",
+      "gpt-4o-mini (OpenAI)",
+      "hunyuan-turbo (腾讯混元)"
+    ],
+    "parameters": {
+      "temperature": {
+        "direct": 0.3,
+        "detailed": 0.5,
+        "guided": 0.7
+      },
+      "max_tokens": 2048,
+      "top_p": 0.9
+    },
+    "system_prompt_version": "v3.2-enhanced",
+    "system_prompt_length": "~4200 chars",
+    "few_shot_examples": 6,
+    "rag_top_k": 4,
+    "teaching_modes": ["direct", "detailed", "guided"],
+    "optimizations": [
+      "Few-shot 示例（行列式 + 特征值 + 概念解释 + 纠错 + 引导学习 + 计算求解）",
+      "结构化回答规范（概念定位→直觉理解→定义→计算→验证→延伸）",
+      "典型错误预警（6类常见错误 + 矩阵乘法交换律陷阱）",
+      "几何直观强化（行列式=面积、特征向量=方向不变、秩=维数）",
+      "RAG 知识库检索增强（BM25，553 个知识片段，覆盖全部 6 章 + 综合应用）",
+      "动态 Few-shot（类微调 in-context：按 BM25 检索训练集最相似例题注入 system）",
+      "智能工作流编排（/api/workflow/quiz 出题 · /api/workflow/solve 分步解题含条件分支 · /api/workflow/diagnose 错题诊断）",
+      "LoRA/QLoRA 微调方案（training/build_sft_dataset.py 生成 2,437 条 SFT 数据；training/lora_finetune.py 可训练专用模型）",
+      "多模态图片识别（/api/vision/latex 图片→LaTeX 公式；/api/vision/matrix-calc 手写矩阵拍照→NumPy 自动计算 det/秩/逆/特征值）",
+      "教学模式适配（direct/detailed/guided 含不同temperature）",
+      "竞赛/考试专项优化（题型识别：选择/填空/证明/计算）",
+      "数值精度与验证要求（精度3-4位小数 + 可验证性检查）",
+      "NumPy风格快速验证 + 手动分步计算双层展示",
+      "LaTeX 格式 Spark X 适配（4反斜杠换行）",
+      "苏格拉底式引导学习流程（5步渐进引导）"
+    ],
+    "evaluation_metrics": {
+      "answer_structure": "优秀",
+      "step_by_step": "优秀",
+      "geometric_intuition": "优秀",
+      "error_prevention": "优秀",
+      "latex_formatting": "优秀",
+      "exam_adaptation": "优秀",
+      "numerical_precision": "优秀",
+      "knowledge_coverage": "优秀",
+      "workflow_orchestration": "优秀",
+      "model_finetuning": "良好",
+      "multimodal_input": "良好"
+    },
+    "knowledge_base": {
+      "passages": 553,
+      "chapters_covered": ["第一章 行列式", "第二章 矩阵", "第三章 向量与线性方程组", "第四章 特征值与特征向量", "第五章 二次型", "第六章 向量空间", "综合应用"],
+      "retriever": "BM25 (pure-python, CJK bigram + 学术术语词典 + 同义词扩展)",
+      "file": "data/knowledge_corpus.json",
+      "generator": "scripts/generate_corpus.py"
+    },
+    "dynamic_fewshot": {
+      "enabled": true,
+      "method": "BM25 over data/training_data.json questions, top-2 injected as in-context exemplars",
+      "purpose": "模仿专家标注作答风格，无需重训权重即可提升领域贴合度"
+    },
+    "workflow_orchestration": {
+      "endpoints": ["/api/workflow/quiz", "/api/workflow/solve", "/api/workflow/diagnose"],
+      "quiz": "RAG检索 + LLM 生成结构化小测验（题型/选项/答案/解析/知识点）",
+      "solve": "分类选分支→RAG检索→LLM求解→自动验算（多步条件分支）",
+      "diagnose": "定位错误→解释误区→给出纠正路径",
+      "frontend_view": "智能工作流 (view-workflow)"
+    },
+    "multimodal_vision": {
+      "endpoints": ["/api/vision/latex", "/api/vision/matrix-calc"],
+      "fallback_chain": "星火图片理解(WebSocket) → OpenAI 兼容视觉 → RapidOCR 文字兜底，星火 10012 自动重试 1 次",
+      "latex": "上传数学公式/手写公式图片 → 视觉大模型识别 → 输出 LaTeX（行内 $/$ 独立 $$）",
+      "matrix_calc": "手写矩阵拍照 → 视觉模型识别矩阵 → NumPy 计算 det/rank/可逆性/逆矩阵/特征值，前端渲染结果",
+      "matrix_engine": "NumPy（np.linalg.det / matrix_rank / inv / eigvals），与解析方法交叉验证",
+      "frontend_card": "图片公式识别 (wf-card-vision)",
+      "note": "视觉 API 未单独配置时自动回退至主 LLM_VISION_* 系列环境变量，缺省回退主模型"
+    },
+    "finetuning": {
+      "sft_dataset_size": 2437,
+      "sft_formats": ["combined(默认)", "alpaca", "sharegpt"],
+      "base_recommended": ["Qwen2.5-7B-Instruct", "InternLM2.5-7B-Chat", "deepseek-math-7b"],
+      "method": "QLoRA (4-bit) + LoRA(r=16,alpha=32)",
+      "scripts": ["training/build_sft_dataset.py", "training/lora_finetune.py"],
+      "note": "线上走 RAG+动态Few-shot；LoRA用于产出可离线部署的专用微调权重，二者互补。真实训练依赖 GPU，尚未产出微调权重"
+    },
+    "training_data": {
+      "qa_pairs": 347,
+      "chapters_covered": ["行列式", "矩阵", "向量与线性方程组", "特征值", "二次型", "向量空间", "综合"],
+      "file": "data/training_data.json"
+    },
+    "updated": "2026-09-10T00:00:00+08:00"
+  }
+}

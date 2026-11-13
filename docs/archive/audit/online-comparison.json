@@ -1,0 +1,262 @@
+[
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "last_modified": "Thu, 10 Sep 2026 09:54:12 GMT",
+    "path": "index.html",
+    "bytes": 214994,
+    "sha256": "4bbee44edd20f6e0337655c109c3002db66ac44247c137594da28643a0a4800b",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/icon-180.png",
+    "status": 200,
+    "content_type": "image/png",
+    "last_modified": "Sat, 22 Aug 2026 06:16:04 GMT",
+    "path": "icon-180.png",
+    "bytes": 23576,
+    "sha256": "226857472cf8cb1f1211d3120ee3fb42713cc59f878f39f23c1519686071e82a",
+    "local_match": false
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/icon-192.png",
+    "status": 200,
+    "content_type": "image/png",
+    "last_modified": "Sat, 22 Aug 2026 06:16:03 GMT",
+    "path": "icon-192.png",
+    "bytes": 25616,
+    "sha256": "0af390518223363615f60cb1a0c005479d06f0ce434782de0715854d5803f616",
+    "local_match": false
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/echarts/echarts.min.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Tue, 18 Aug 2026 05:35:02 GMT",
+    "path": "lib/echarts/echarts.min.js",
+    "bytes": 1024740,
+    "sha256": "1156429a16a38cb8604dcc6518c19406d4226142d908f8edd2e3531443c54d19",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/auto-render.min.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Tue, 18 Aug 2026 05:35:02 GMT",
+    "path": "lib/katex/auto-render.min.js",
+    "bytes": 3478,
+    "sha256": "9cb8dacfc086c2966c9ec4ba54f4a2dc43b7cbe2b33cec1a2743d886c7fb47a7",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/katex.min.css",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "last_modified": "Tue, 18 Aug 2026 05:35:02 GMT",
+    "path": "lib/katex/katex.min.css",
+    "bytes": 23196,
+    "sha256": "505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/katex/katex.min.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Tue, 18 Aug 2026 05:35:02 GMT",
+    "path": "lib/katex/katex.min.js",
+    "bytes": 277038,
+    "sha256": "dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/three/three.min.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Tue, 18 Aug 2026 05:35:02 GMT",
+    "path": "lib/three/three.min.js",
+    "bytes": 669884,
+    "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/manifest.json",
+    "status": 200,
+    "content_type": "application/manifest+json",
+    "last_modified": "Sat, 22 Aug 2026 05:22:12 GMT",
+    "path": "manifest.json",
+    "bytes": 1144,
+    "sha256": "4e1ffaaae86bbab2e1cf623429210f9c9c4d6e68d2d9b7fffc263b3133920750",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/sw.js",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Thu, 10 Sep 2026 09:54:16 GMT",
+    "path": "sw.js",
+    "bytes": 3284,
+    "sha256": "092f88c5afffd28d1c454943f11e639b15dc587319cd1fe5c8a0d37e6217ec44",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/css/style.v3.19.css?v=20260910c",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "last_modified": "Thu, 10 Sep 2026 09:53:48 GMT",
+    "path": "css/style.v3.19.css",
+    "bytes": 497755,
+    "sha256": "85121a2ad3d0453936d48af50b9b81e1dbcfe7adf377152dbbfa80db36b5f87f",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/css/ui-polish.css?v=20260910c",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "last_modified": "Thu, 10 Sep 2026 06:29:40 GMT",
+    "path": "css/ui-polish.css",
+    "bytes": 68036,
+    "sha256": "a4f48cb7101d2b1537f94573ce968eaad676fe736a4ca1eded102b3684f687e5",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/app.v3.19.js?v=20260910c",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Thu, 10 Sep 2026 06:14:29 GMT",
+    "path": "js/app.v3.19.js",
+    "bytes": 660673,
+    "sha256": "39522d76bb37fba9edef67ab2eb8ae9ad3b7c6ddea1b5a0ff52b8ed95deb0008",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/auth.v3.19.js?v=20260907d",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Sat, 05 Sep 2026 04:39:19 GMT",
+    "path": "js/auth.v3.19.js",
+    "bytes": 33307,
+    "sha256": "4846fecf1fd9ed8bea51ac8f848e8839c07334558751a8dcb29e19394abf27a8",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/chat.js?v=20260907d",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Fri, 04 Sep 2026 14:17:36 GMT",
+    "path": "js/chat.js",
+    "bytes": 44794,
+    "sha256": "b1a7b42daee7ab87f814e30de2308d47e2102be86ce6921d3c27c54a9577b9e7",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/config.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Fri, 04 Sep 2026 14:17:36 GMT",
+    "path": "js/config.js",
+    "bytes": 172,
+    "sha256": "df829ba2017d883dcb5a265bca1abaff61575aca277bfc73af8f7a879462c12a",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/exam-papers.js?v=20260907d",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Fri, 04 Sep 2026 14:24:03 GMT",
+    "path": "js/exam-papers.js",
+    "bytes": 2053,
+    "sha256": "b79dc6091b0fd41f1f2dc2f54305c4691591b5373b116cac21a737e6f6202521",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/floating-formulas.js?v=20260907d",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Fri, 04 Sep 2026 14:17:36 GMT",
+    "path": "js/floating-formulas.js",
+    "bytes": 17033,
+    "sha256": "dd6ff798b8e6fdd5b29f6c4286f5009b4e575c14004195ff42b0957e4cf235eb",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/knowledge.js?v=20260907d",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Fri, 04 Sep 2026 14:17:36 GMT",
+    "path": "js/knowledge.js",
+    "bytes": 97494,
+    "sha256": "f68a20879d1cba4772bbca66d86ab37dd171e85f6d968005fdb6a3b537217d53",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/math-tools.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Fri, 04 Sep 2026 14:17:36 GMT",
+    "path": "js/math-tools.js",
+    "bytes": 23180,
+    "sha256": "b03e951c51453ae30c1dcb871adf11486adec8d8cc07cd57b2d6de3869d793f2",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/quiz-bank.js?v=20260907d",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Fri, 04 Sep 2026 14:17:36 GMT",
+    "path": "js/quiz-bank.js",
+    "bytes": 108455,
+    "sha256": "b44fc488cf0538f78eb9afec34d59a506808266de806432a7c09c1863156bd8e",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/quiz-system.v3.19.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Fri, 04 Sep 2026 14:17:36 GMT",
+    "path": "js/quiz-system.v3.19.js",
+    "bytes": 13330,
+    "sha256": "fdf3aa6724203db56d397a1dccca8357499e02ed2a0ccfda44756a6bac3495c3",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/quiz-ui.v3.19.js?v=20260907d",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Mon, 07 Sep 2026 10:16:53 GMT",
+    "path": "js/quiz-ui.v3.19.js",
+    "bytes": 102983,
+    "sha256": "75c54e9283035f2a7a7f254de6daca598264aaa57cdf8cda926477d23d9bdd40",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/resources.js?v=20260907d",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Mon, 07 Sep 2026 03:25:14 GMT",
+    "path": "js/resources.js",
+    "bytes": 26323,
+    "sha256": "96f8789652009170a7a10c4473b55127a8c97fd372c870761d0c8eada1a43591",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/social.js?v=20260907d",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Sat, 05 Sep 2026 04:39:48 GMT",
+    "path": "js/social.js",
+    "bytes": 31542,
+    "sha256": "ba1cf6940ed789b2ecfddb5516c506b1319952485ee97b6465d31b470c504bec",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/js/visualizer.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Fri, 04 Sep 2026 14:17:36 GMT",
+    "path": "js/visualizer.js",
+    "bytes": 18192,
+    "sha256": "3cd8a614338b4c219ebee1edaca7045836b1dc09a2420935fb0a8be147542063",
+    "local_match": true
+  }
+]

@@ -1,0 +1,19 @@
+# 敏感文件 —— 绝不提交/打包
+.env
+auth_secret.key
+
+# 运行时数据
+*.db
+*.db-journal
+backups/
+__pycache__/
+*.pyc
+
+# 依赖与日志
+node_modules/
+*.log
+
+work/
+.venv/
+*.db-shm
+*.db-wal

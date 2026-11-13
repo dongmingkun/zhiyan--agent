@@ -1,0 +1,1031 @@
+{
+  "source_archive": "05—作品代码.zip",
+  "source_count": 126,
+  "source_total_bytes": 13057523,
+  "files": [
+    {
+      "source": ".dockerignore",
+      "source_bytes": 103,
+      "source_sha256": "d10ee3e1dec22271a1f530501babd0e904205f24bea2c1dae63b75b53772da8e",
+      "target": ".dockerignore",
+      "target_sha256": "0a736fc0ccd256c30b912954cca9e3a0f7efb9d0418a44dfa4eafa916c1baa38",
+      "status": "modified"
+    },
+    {
+      "source": ".env.example",
+      "source_bytes": 1644,
+      "source_sha256": "d974105a4184723188f9ced65b73b2b8dd14f2509d6cdb9cbf2f0f98af322a0c",
+      "target": ".env.example",
+      "target_sha256": "b9af016a67fe528e64e6a2cbd7a011e745bbd15bc3d48eaa00634972c836418f",
+      "status": "modified"
+    },
+    {
+      "source": ".gitignore",
+      "source_bytes": 167,
+      "source_sha256": "a8db163f4987c77e450edf3f5060e54511c1b11a5ae840ca45e2e28f9789473c",
+      "target": ".gitignore",
+      "target_sha256": "51b30bad0ad4fd642c062fb3e43b77340411d0fb00bc64418a874bce6afaefb8",
+      "status": "modified"
+    },
+    {
+      "source": "build_corpus.js",
+      "source_bytes": 2115,
+      "source_sha256": "5c82679673556e465c281766934589d452cbcbe816e27dd2549e11a02104e851",
+      "target": "scripts/build_corpus.js",
+      "target_sha256": "39d350ebcd35d74de062161b39f44490c1facd27767294ed8f3a2bcf12cbed73",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "clean_db.py",
+      "source_bytes": 13696,
+      "source_sha256": "65411b9ecc32a21fd707dce943a6799d59d10266ea7c8b081811d8b0027c1ac0",
+      "target": "scripts/clean_db.py",
+      "target_sha256": "0a70d870302920ef2c0e3008091fca7bd7759db96d4f25f9ef145210dd9f15eb",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "cleanup_ai_corpus.py",
+      "source_bytes": 3090,
+      "source_sha256": "8cba3dc5c0e3f211496423cd06cb78b8a2b3436cea17e66ed287d250820628e0",
+      "target": "scripts/cleanup_ai_corpus.py",
+      "target_sha256": "afc7dd440afb4dc656681847f17b2a141a15c50542b5cfd64287253adfa5f032",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "css/style.css",
+      "source_bytes": 155852,
+      "source_sha256": "125d5797ad6a300baf011eb6ecc0325564f871e1b82b84701c1910b30488cd88",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "css/style.v3.19.css",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "css/style.v3.19.css",
+      "source_bytes": 497755,
+      "source_sha256": "85121a2ad3d0453936d48af50b9b81e1dbcfe7adf377152dbbfa80db36b5f87f",
+      "target": "css/style.v3.19.css",
+      "target_sha256": "19317cf88870d4f14208a90931b992e5fd0693e3013ab6833a0b907a03719946",
+      "status": "modified"
+    },
+    {
+      "source": "css/ui-polish.css",
+      "source_bytes": 68036,
+      "source_sha256": "a4f48cb7101d2b1537f94573ce968eaad676fe736a4ca1eded102b3684f687e5",
+      "target": "css/ui-polish.css",
+      "target_sha256": "ef818c0622a1d05780b02071e0974993f771fd1430b8233a876a169a6989a34e",
+      "status": "modified"
+    },
+    {
+      "source": "data_cleanup_audit.json",
+      "source_bytes": 1263,
+      "source_sha256": "dd95ec900d2ba506227ab799c92dc35d55976ff8e47ec6c72d15082468544826",
+      "target": "data_cleanup_audit.json",
+      "target_sha256": "dd95ec900d2ba506227ab799c92dc35d55976ff8e47ec6c72d15082468544826",
+      "status": "unchanged"
+    },
+    {
+      "source": "DEPLOY.md",
+      "source_bytes": 7857,
+      "source_sha256": "2b0bafd44744ced5ac9aad09aeae2b578a92682597f0610839f8c751d4dd736f",
+      "target": "docs/history/DEPLOY.md",
+      "target_sha256": "31bad5f306adb605ac86c3724467ce6e2601d3728d3c4acaa18a656d4ac0c2a6",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "Dockerfile",
+      "source_bytes": 573,
+      "source_sha256": "7427fa59ed8f91d1a176b9b822f6dc768629fc8d19454d5b0f8f79c08e9cecad",
+      "target": "Dockerfile",
+      "target_sha256": "d1b0615cf771dd4a1694b7a4a632a1cb3cb6ee21f73198f1b4782858f94aa3f5",
+      "status": "modified"
+    },
+    {
+      "source": "engine.py",
+      "source_bytes": 23321,
+      "source_sha256": "64903f8201e7f5f71f92dca0dcff0c8dec665943006eeb46eaf9675d021f180e",
+      "target": "backend/engine.py",
+      "target_sha256": "64903f8201e7f5f71f92dca0dcff0c8dec665943006eeb46eaf9675d021f180e",
+      "status": "moved"
+    },
+    {
+      "source": "generate_training_data.py",
+      "source_bytes": 11545,
+      "source_sha256": "ec9cb98f4d0ec1e7d7005ab06f5dbe90321557b775acc611f6762faeaa7f30a1",
+      "target": "scripts/generate_training_data.py",
+      "target_sha256": "8ad18401085d5e82bf7de12f52032a208fb7974c4d2ee338f7cb3be0ae3b1175",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "guard_train.py",
+      "source_bytes": 4027,
+      "source_sha256": "9c71149b467075f326b6d070dd1079a71a281728930e3d6945bed81d77f1980c",
+      "target": "training/guard_train.py",
+      "target_sha256": "977ab4b3155c648d25063d683183b4c3e82f43fa6b51f3a09af645e9e7bf8108",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "index.html",
+      "source_bytes": 214994,
+      "source_sha256": "4bbee44edd20f6e0337655c109c3002db66ac44247c137594da28643a0a4800b",
+      "target": "index.html",
+      "target_sha256": "467bfb5a0b8040a2d0295304dc6cccf9c95ba27d418ffb9fe84f7978fdd46230",
+      "status": "modified"
+    },
+    {
+      "source": "js/app.js",
+      "source_bytes": 146941,
+      "source_sha256": "c256445136d0e69b3791406e61bc07321f1aa305eca9be2d40f79c5bdcb2c2cf",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "js/app.v3.19.js",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "js/app.v3.19.js",
+      "source_bytes": 660673,
+      "source_sha256": "39522d76bb37fba9edef67ab2eb8ae9ad3b7c6ddea1b5a0ff52b8ed95deb0008",
+      "target": "js/app.v3.19.js",
+      "target_sha256": "da68a9e8209076cb0858d4eeda73ec484d4b346aad60c5ad149bb942370f8577",
+      "status": "modified"
+    },
+    {
+      "source": "js/auth.js",
+      "source_bytes": 5740,
+      "source_sha256": "7be7f9944680dc3aeac8b574f476c763825fbb8e02060cd6a58ea275232b516d",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "js/auth.v3.19.js",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "js/auth.v3.19.js",
+      "source_bytes": 33307,
+      "source_sha256": "4846fecf1fd9ed8bea51ac8f848e8839c07334558751a8dcb29e19394abf27a8",
+      "target": "js/auth.v3.19.js",
+      "target_sha256": "4846fecf1fd9ed8bea51ac8f848e8839c07334558751a8dcb29e19394abf27a8",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/chat.js",
+      "source_bytes": 44794,
+      "source_sha256": "b1a7b42daee7ab87f814e30de2308d47e2102be86ce6921d3c27c54a9577b9e7",
+      "target": "js/chat.js",
+      "target_sha256": "b1a7b42daee7ab87f814e30de2308d47e2102be86ce6921d3c27c54a9577b9e7",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/config.js",
+      "source_bytes": 172,
+      "source_sha256": "df829ba2017d883dcb5a265bca1abaff61575aca277bfc73af8f7a879462c12a",
+      "target": "js/config.js",
+      "target_sha256": "df829ba2017d883dcb5a265bca1abaff61575aca277bfc73af8f7a879462c12a",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/exam-papers.js",
+      "source_bytes": 2053,
+      "source_sha256": "b79dc6091b0fd41f1f2dc2f54305c4691591b5373b116cac21a737e6f6202521",
+      "target": "js/exam-papers.js",
+      "target_sha256": "b79dc6091b0fd41f1f2dc2f54305c4691591b5373b116cac21a737e6f6202521",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/floating-formulas.js",
+      "source_bytes": 17033,
+      "source_sha256": "dd6ff798b8e6fdd5b29f6c4286f5009b4e575c14004195ff42b0957e4cf235eb",
+      "target": "js/floating-formulas.js",
+      "target_sha256": "dd6ff798b8e6fdd5b29f6c4286f5009b4e575c14004195ff42b0957e4cf235eb",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/knowledge.js",
+      "source_bytes": 97494,
+      "source_sha256": "f68a20879d1cba4772bbca66d86ab37dd171e85f6d968005fdb6a3b537217d53",
+      "target": "js/knowledge.js",
+      "target_sha256": "f68a20879d1cba4772bbca66d86ab37dd171e85f6d968005fdb6a3b537217d53",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/math-tools.js",
+      "source_bytes": 23180,
+      "source_sha256": "b03e951c51453ae30c1dcb871adf11486adec8d8cc07cd57b2d6de3869d793f2",
+      "target": "js/math-tools.js",
+      "target_sha256": "b03e951c51453ae30c1dcb871adf11486adec8d8cc07cd57b2d6de3869d793f2",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/quiz-bank.js",
+      "source_bytes": 108455,
+      "source_sha256": "b44fc488cf0538f78eb9afec34d59a506808266de806432a7c09c1863156bd8e",
+      "target": "js/quiz-bank.js",
+      "target_sha256": "b44fc488cf0538f78eb9afec34d59a506808266de806432a7c09c1863156bd8e",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/quiz-system.js",
+      "source_bytes": 9887,
+      "source_sha256": "bef4b5a03375b5849c459357f9847ecd5f1d6b605509f47668d0b4bb7a2671d8",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "js/quiz-system.v3.19.js",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "js/quiz-system.v3.19.js",
+      "source_bytes": 13330,
+      "source_sha256": "fdf3aa6724203db56d397a1dccca8357499e02ed2a0ccfda44756a6bac3495c3",
+      "target": "js/quiz-system.v3.19.js",
+      "target_sha256": "fdf3aa6724203db56d397a1dccca8357499e02ed2a0ccfda44756a6bac3495c3",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/quiz-ui.js",
+      "source_bytes": 54428,
+      "source_sha256": "6b43890580d25417796241121f2e1c0c73361cda219e2f719b5ae83d3acb4173",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "js/quiz-ui.v3.19.js",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "js/quiz-ui.v3.19.js",
+      "source_bytes": 102983,
+      "source_sha256": "75c54e9283035f2a7a7f254de6daca598264aaa57cdf8cda926477d23d9bdd40",
+      "target": "js/quiz-ui.v3.19.js",
+      "target_sha256": "258bbe504a7833828f854ac8e6def598f7e0a835059347b09ef388f541e7589c",
+      "status": "modified"
+    },
+    {
+      "source": "js/resources.js",
+      "source_bytes": 26323,
+      "source_sha256": "96f8789652009170a7a10c4473b55127a8c97fd372c870761d0c8eada1a43591",
+      "target": "js/resources.js",
+      "target_sha256": "96f8789652009170a7a10c4473b55127a8c97fd372c870761d0c8eada1a43591",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/social.js",
+      "source_bytes": 31542,
+      "source_sha256": "ba1cf6940ed789b2ecfddb5516c506b1319952485ee97b6465d31b470c504bec",
+      "target": "js/social.js",
+      "target_sha256": "ba1cf6940ed789b2ecfddb5516c506b1319952485ee97b6465d31b470c504bec",
+      "status": "unchanged"
+    },
+    {
+      "source": "js/visualizer.js",
+      "source_bytes": 18192,
+      "source_sha256": "3cd8a614338b4c219ebee1edaca7045836b1dc09a2420935fb0a8be147542063",
+      "target": "js/visualizer.js",
+      "target_sha256": "3cd8a614338b4c219ebee1edaca7045836b1dc09a2420935fb0a8be147542063",
+      "status": "unchanged"
+    },
+    {
+      "source": "knowledge_corpus.json",
+      "source_bytes": 2210558,
+      "source_sha256": "ba987f357e03b9cdeb2e2764acb3c9c06bfcb65cf7a350b44dc174779051b93f",
+      "target": "knowledge_corpus.json",
+      "target_sha256": "ba987f357e03b9cdeb2e2764acb3c9c06bfcb65cf7a350b44dc174779051b93f",
+      "status": "unchanged"
+    },
+    {
+      "source": "knowledge_graph.py",
+      "source_bytes": 6490,
+      "source_sha256": "c726f8b7b5a6e98bb6eba001559c964e4ba05773362f0717d13f359345e91f95",
+      "target": "backend/knowledge_graph.py",
+      "target_sha256": "c726f8b7b5a6e98bb6eba001559c964e4ba05773362f0717d13f359345e91f95",
+      "status": "moved"
+    },
+    {
+      "source": "lib/echarts/echarts.min.js",
+      "source_bytes": 1024740,
+      "source_sha256": "1156429a16a38cb8604dcc6518c19406d4226142d908f8edd2e3531443c54d19",
+      "target": "lib/echarts/echarts.min.js",
+      "target_sha256": "1156429a16a38cb8604dcc6518c19406d4226142d908f8edd2e3531443c54d19",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/auto-render.min.js",
+      "source_bytes": 3478,
+      "source_sha256": "9cb8dacfc086c2966c9ec4ba54f4a2dc43b7cbe2b33cec1a2743d886c7fb47a7",
+      "target": "lib/katex/auto-render.min.js",
+      "target_sha256": "9cb8dacfc086c2966c9ec4ba54f4a2dc43b7cbe2b33cec1a2743d886c7fb47a7",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_AMS-Regular.woff",
+      "source_bytes": 33516,
+      "source_sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",
+      "target": "lib/katex/fonts/KaTeX_AMS-Regular.woff",
+      "target_sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_AMS-Regular.woff2",
+      "source_bytes": 28076,
+      "source_sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
+      "target": "lib/katex/fonts/KaTeX_AMS-Regular.woff2",
+      "target_sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Caligraphic-Bold.woff",
+      "source_bytes": 7716,
+      "source_sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed",
+      "target": "lib/katex/fonts/KaTeX_Caligraphic-Bold.woff",
+      "target_sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+      "source_bytes": 6912,
+      "source_sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c",
+      "target": "lib/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+      "target_sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Caligraphic-Regular.woff",
+      "source_bytes": 7656,
+      "source_sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c",
+      "target": "lib/katex/fonts/KaTeX_Caligraphic-Regular.woff",
+      "target_sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+      "source_bytes": 6908,
+      "source_sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b",
+      "target": "lib/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+      "target_sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Fraktur-Bold.woff",
+      "source_bytes": 13296,
+      "source_sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb",
+      "target": "lib/katex/fonts/KaTeX_Fraktur-Bold.woff",
+      "target_sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+      "source_bytes": 11348,
+      "source_sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f",
+      "target": "lib/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+      "target_sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Fraktur-Regular.woff",
+      "source_bytes": 13208,
+      "source_sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463",
+      "target": "lib/katex/fonts/KaTeX_Fraktur-Regular.woff",
+      "target_sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+      "source_bytes": 11316,
+      "source_sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc",
+      "target": "lib/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+      "target_sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Main-Bold.woff",
+      "source_bytes": 29912,
+      "source_sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822",
+      "target": "lib/katex/fonts/KaTeX_Main-Bold.woff",
+      "target_sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Main-Bold.woff2",
+      "source_bytes": 25324,
+      "source_sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021",
+      "target": "lib/katex/fonts/KaTeX_Main-Bold.woff2",
+      "target_sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Main-BoldItalic.woff",
+      "source_bytes": 19412,
+      "source_sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c",
+      "target": "lib/katex/fonts/KaTeX_Main-BoldItalic.woff",
+      "target_sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Main-BoldItalic.woff2",
+      "source_bytes": 16780,
+      "source_sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b",
+      "target": "lib/katex/fonts/KaTeX_Main-BoldItalic.woff2",
+      "target_sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Main-Italic.woff",
+      "source_bytes": 19676,
+      "source_sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf",
+      "target": "lib/katex/fonts/KaTeX_Main-Italic.woff",
+      "target_sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Main-Italic.woff2",
+      "source_bytes": 16988,
+      "source_sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267",
+      "target": "lib/katex/fonts/KaTeX_Main-Italic.woff2",
+      "target_sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Main-Regular.woff",
+      "source_bytes": 30772,
+      "source_sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc",
+      "target": "lib/katex/fonts/KaTeX_Main-Regular.woff",
+      "target_sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Main-Regular.woff2",
+      "source_bytes": 26272,
+      "source_sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866",
+      "target": "lib/katex/fonts/KaTeX_Main-Regular.woff2",
+      "target_sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Math-BoldItalic.woff",
+      "source_bytes": 18668,
+      "source_sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e",
+      "target": "lib/katex/fonts/KaTeX_Math-BoldItalic.woff",
+      "target_sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Math-BoldItalic.woff2",
+      "source_bytes": 16400,
+      "source_sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1",
+      "target": "lib/katex/fonts/KaTeX_Math-BoldItalic.woff2",
+      "target_sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Math-Italic.woff",
+      "source_bytes": 18748,
+      "source_sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571",
+      "target": "lib/katex/fonts/KaTeX_Math-Italic.woff",
+      "target_sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Math-Italic.woff2",
+      "source_bytes": 16440,
+      "source_sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264",
+      "target": "lib/katex/fonts/KaTeX_Math-Italic.woff2",
+      "target_sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_SansSerif-Bold.woff",
+      "source_bytes": 14408,
+      "source_sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba",
+      "target": "lib/katex/fonts/KaTeX_SansSerif-Bold.woff",
+      "target_sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_SansSerif-Bold.woff2",
+      "source_bytes": 12216,
+      "source_sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62",
+      "target": "lib/katex/fonts/KaTeX_SansSerif-Bold.woff2",
+      "target_sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_SansSerif-Italic.woff",
+      "source_bytes": 14112,
+      "source_sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2",
+      "target": "lib/katex/fonts/KaTeX_SansSerif-Italic.woff",
+      "target_sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_SansSerif-Italic.woff2",
+      "source_bytes": 12028,
+      "source_sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a",
+      "target": "lib/katex/fonts/KaTeX_SansSerif-Italic.woff2",
+      "target_sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_SansSerif-Regular.woff",
+      "source_bytes": 12316,
+      "source_sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605",
+      "target": "lib/katex/fonts/KaTeX_SansSerif-Regular.woff",
+      "target_sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+      "source_bytes": 10344,
+      "source_sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342",
+      "target": "lib/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+      "target_sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Script-Regular.woff",
+      "source_bytes": 10588,
+      "source_sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a",
+      "target": "lib/katex/fonts/KaTeX_Script-Regular.woff",
+      "target_sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Script-Regular.woff2",
+      "source_bytes": 9644,
+      "source_sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b",
+      "target": "lib/katex/fonts/KaTeX_Script-Regular.woff2",
+      "target_sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Size1-Regular.woff",
+      "source_bytes": 6496,
+      "source_sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9",
+      "target": "lib/katex/fonts/KaTeX_Size1-Regular.woff",
+      "target_sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Size1-Regular.woff2",
+      "source_bytes": 5468,
+      "source_sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe",
+      "target": "lib/katex/fonts/KaTeX_Size1-Regular.woff2",
+      "target_sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Size2-Regular.woff",
+      "source_bytes": 6188,
+      "source_sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d",
+      "target": "lib/katex/fonts/KaTeX_Size2-Regular.woff",
+      "target_sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Size2-Regular.woff2",
+      "source_bytes": 5208,
+      "source_sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd",
+      "target": "lib/katex/fonts/KaTeX_Size2-Regular.woff2",
+      "target_sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Size3-Regular.woff",
+      "source_bytes": 4420,
+      "source_sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949",
+      "target": "lib/katex/fonts/KaTeX_Size3-Regular.woff",
+      "target_sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Size3-Regular.woff2",
+      "source_bytes": 3624,
+      "source_sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995",
+      "target": "lib/katex/fonts/KaTeX_Size3-Regular.woff2",
+      "target_sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Size4-Regular.woff",
+      "source_bytes": 5980,
+      "source_sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58",
+      "target": "lib/katex/fonts/KaTeX_Size4-Regular.woff",
+      "target_sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Size4-Regular.woff2",
+      "source_bytes": 4928,
+      "source_sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0",
+      "target": "lib/katex/fonts/KaTeX_Size4-Regular.woff2",
+      "target_sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Typewriter-Regular.woff",
+      "source_bytes": 16028,
+      "source_sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7",
+      "target": "lib/katex/fonts/KaTeX_Typewriter-Regular.woff",
+      "target_sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+      "source_bytes": 13568,
+      "source_sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b",
+      "target": "lib/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+      "target_sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/katex.min.css",
+      "source_bytes": 23196,
+      "source_sha256": "505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3",
+      "target": "lib/katex/katex.min.css",
+      "target_sha256": "505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/katex/katex.min.js",
+      "source_bytes": 277038,
+      "source_sha256": "dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae",
+      "target": "lib/katex/katex.min.js",
+      "target_sha256": "dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/pdfjs/pdf.min.js",
+      "source_bytes": 320004,
+      "source_sha256": "5b5799e6f8c680663207ac5b42ee14eed2a406fa7af48f50c154f0c0b1566946",
+      "target": "lib/pdfjs/pdf.min.js",
+      "target_sha256": "5b5799e6f8c680663207ac5b42ee14eed2a406fa7af48f50c154f0c0b1566946",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/pdfjs/pdf.worker.min.js",
+      "source_bytes": 1087212,
+      "source_sha256": "feabdf309770ed24bba31a5467836cdc8cf639c705af27d52b585b041bb8527b",
+      "target": "lib/pdfjs/pdf.worker.min.js",
+      "target_sha256": "feabdf309770ed24bba31a5467836cdc8cf639c705af27d52b585b041bb8527b",
+      "status": "unchanged"
+    },
+    {
+      "source": "lib/three/three.min.js",
+      "source_bytes": 669884,
+      "source_sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+      "target": "lib/three/three.min.js",
+      "target_sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+      "status": "unchanged"
+    },
+    {
+      "source": "main.py",
+      "source_bytes": 411155,
+      "source_sha256": "28339808dca42fe177f360843341c950d7a8be379c9cabfb32f8e61d01f136af",
+      "target": "backend/main.py",
+      "target_sha256": "e706dde90e531f83453df87d2220bf57a3dc897b375ab654e389da0da776038d",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "manage_proc.py",
+      "source_bytes": 2841,
+      "source_sha256": "5dc8d09d99a16ad450d706e569bdb55d3e3a9364ecbeddf9da9c2b361aa37df0",
+      "target": "scripts/manage_proc.py",
+      "target_sha256": "3db1940697553db419015c9d0cb4c3af4ffee345fca6a2a537eca0dd8b69b9d6",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "manifest.json",
+      "source_bytes": 1144,
+      "source_sha256": "4e1ffaaae86bbab2e1cf623429210f9c9c4d6e68d2d9b7fffc263b3133920750",
+      "target": "manifest.json",
+      "target_sha256": "4e1ffaaae86bbab2e1cf623429210f9c9c4d6e68d2d9b7fffc263b3133920750",
+      "status": "unchanged"
+    },
+    {
+      "source": "metadata.json",
+      "source_bytes": 34759,
+      "source_sha256": "9cf8df34e3cf87b456e5d9722bb862c961ce8169230e30cb4db55fee27f18bab",
+      "target": "metadata.json",
+      "target_sha256": "9cf8df34e3cf87b456e5d9722bb862c961ce8169230e30cb4db55fee27f18bab",
+      "status": "unchanged"
+    },
+    {
+      "source": "model_config.json",
+      "source_bytes": 5054,
+      "source_sha256": "0c0c84a29597c525083741783252c5a3fbb3b449ecd45412f234bff9cf2f0776",
+      "target": "model_config.json",
+      "target_sha256": "0c0c84a29597c525083741783252c5a3fbb3b449ecd45412f234bff9cf2f0776",
+      "status": "unchanged"
+    },
+    {
+      "source": "ocr_engine.py",
+      "source_bytes": 8676,
+      "source_sha256": "39fe3d3fef952c2132e806c9c344c14f728ab426471b4f042fe2e946ca493e89",
+      "target": "backend/ocr_engine.py",
+      "target_sha256": "39fe3d3fef952c2132e806c9c344c14f728ab426471b4f042fe2e946ca493e89",
+      "status": "moved"
+    },
+    {
+      "source": "Procfile",
+      "source_bytes": 19,
+      "source_sha256": "f83a2154f5810d2a04f291721f8c47aee485426f102f582af5b1a5fe7ab6dae6",
+      "target": "Procfile",
+      "target_sha256": "f83a2154f5810d2a04f291721f8c47aee485426f102f582af5b1a5fe7ab6dae6",
+      "status": "unchanged"
+    },
+    {
+      "source": "README.md",
+      "source_bytes": 4001,
+      "source_sha256": "ae959f0338aa8ff8aa49cb491b9555ff6900ffbd650b14bee0b91d8c91074ed0",
+      "target": "docs/history/README.original.md",
+      "target_sha256": "2b495c9ea6e01f32f1784c78846cf0b87ab05b32c8d8581055088d8c84dce7f4",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "requirements.txt",
+      "source_bytes": 107,
+      "source_sha256": "77113bf96677c7036009122f2ef975e9e09d78b381de0efe640a7de06efff714",
+      "target": "requirements.txt",
+      "target_sha256": "88d140720c2ab12c197e2d7a89c0fbfae1a9e6c0b045d80e04c19a3edbf45150",
+      "status": "modified"
+    },
+    {
+      "source": "retrieval.py",
+      "source_bytes": 11190,
+      "source_sha256": "77ad00950c71530a5496b7f79d46347fd8e76b8fadf40c930025b9e07e6ed989",
+      "target": "backend/retrieval.py",
+      "target_sha256": "e6bebaecf266d5de4a433b52e19350bc5698b76f289d7f3b8f28030b50797d3a",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "run.py",
+      "source_bytes": 2061,
+      "source_sha256": "14ed4f57db983b6e2243cf23b0b7a08a032781cb43d0c7563ff018593de991e1",
+      "target": "run.py",
+      "target_sha256": "506afdbcc7468cd74938de69a29ea8b0cfebe2fd421bd0a718239b2a6cd63242",
+      "status": "modified"
+    },
+    {
+      "source": "scripts/generate_corpus.py",
+      "source_bytes": 78673,
+      "source_sha256": "717ef52053d858c618dbfdb61a5ace4d70a3521fe5885bedb0dc5851e91e9650",
+      "target": "scripts/generate_corpus.py",
+      "target_sha256": "717ef52053d858c618dbfdb61a5ace4d70a3521fe5885bedb0dc5851e91e9650",
+      "status": "unchanged"
+    },
+    {
+      "source": "seed_data.json",
+      "source_bytes": 306250,
+      "source_sha256": "9f6befef684663a2baaff5b7df300e8c4855849dc96af4a64cd7324fbd06e3b6",
+      "target": "seed_data.json",
+      "target_sha256": "9f6befef684663a2baaff5b7df300e8c4855849dc96af4a64cd7324fbd06e3b6",
+      "status": "unchanged"
+    },
+    {
+      "source": "seed_demo_account.py",
+      "source_bytes": 12293,
+      "source_sha256": "415cc77f6ea18e118cf212973342d83f00e4252aa1324c28b77a162587cb74a4",
+      "target": "scripts/seed_demo_account.py",
+      "target_sha256": "247f5c5a7e8de4e901054802f21f9419adcda12057e9c28008775a14406b8edf",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "self_train.py",
+      "source_bytes": 24543,
+      "source_sha256": "e17828a4eabee8c44557de41411f1c126225d089090efb7010b2e399abc8ca35",
+      "target": "training/self_train.py",
+      "target_sha256": "e87079f8f0be1db2cc624da0c13f5eca47e883e811e6b95c3c9748e660242753",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "self_train_state.json",
+      "source_bytes": 37885,
+      "source_sha256": "f5e9807d5d7b3e5ee3599a404860fc6190bb1ee27b953f63ad3eb115231d6c8d",
+      "target": "docs/history/data/self_train_state.json",
+      "target_sha256": "f5e9807d5d7b3e5ee3599a404860fc6190bb1ee27b953f63ad3eb115231d6c8d",
+      "status": "moved"
+    },
+    {
+      "source": "spark_image.py",
+      "source_bytes": 5787,
+      "source_sha256": "1b4b6bb2766e5d0eae6cd549de2988c46e6694e44df84aa976f5e2d3a58feffa",
+      "target": "backend/spark_image.py",
+      "target_sha256": "1b4b6bb2766e5d0eae6cd549de2988c46e6694e44df84aa976f5e2d3a58feffa",
+      "status": "moved"
+    },
+    {
+      "source": "sw.js",
+      "source_bytes": 3284,
+      "source_sha256": "092f88c5afffd28d1c454943f11e639b15dc587319cd1fe5c8a0d37e6217ec44",
+      "target": "sw.js",
+      "target_sha256": "4945a98a82efacd01966c333780ff40ed2b2687fb246c8bf771fe8f16796c7a3",
+      "status": "modified"
+    },
+    {
+      "source": "training/build_sft_dataset.py",
+      "source_bytes": 6820,
+      "source_sha256": "679ada43dd89c22c15f02dfec55aeac9e2ebffbb7a5eaad48a05e1181e5228cc",
+      "target": "training/build_sft_dataset.py",
+      "target_sha256": "92b507900eff393b8eca2716be89b42c288fda93deb9a2f99081705e5cbf9be3",
+      "status": "modified"
+    },
+    {
+      "source": "training/lora_finetune.py",
+      "source_bytes": 8044,
+      "source_sha256": "f6ae32f913e38be3e564f949fb96354f2442fae46581ca0d4f4c4e284c2dd9bf",
+      "target": "training/lora_finetune.py",
+      "target_sha256": "74d4cce2a428d2f27b42d0d611b1904cce4f8f04d91907e544640627593614fa",
+      "status": "modified"
+    },
+    {
+      "source": "training/sft_alpaca.json",
+      "source_bytes": 296142,
+      "source_sha256": "152a548276626b4185da6c862eb356a98d9848ac7feb1537d3d702e31686caf3",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "training/sft_combined.json",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "training/sft_combined.json",
+      "source_bytes": 301489,
+      "source_sha256": "547a66cd2c10b13b952c511202e9d983249816a0d410931f9df281af714438ca",
+      "target": "training/sft_combined.json",
+      "target_sha256": "76d54ba5e1218b54d821f4b9641290bcd3939a6509359d1e97f892175af67051",
+      "status": "modified"
+    },
+    {
+      "source": "training/sft_sharegpt.json",
+      "source_bytes": 342084,
+      "source_sha256": "418d9e50ba49473397ff7939363a01b42bb2f695157386dd05801f28380c6dc8",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "training/sft_combined.json",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "training/sft_stats.json",
+      "source_bytes": 356,
+      "source_sha256": "3037975c4414a648177169cef3761094e5ad7cfbb9cf601d72feba55df44f7a6",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "training/sft_combined.json",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "training_data.json",
+      "source_bytes": 1060512,
+      "source_sha256": "b0fa8523c4b0b79d3c1dd6a272cd6c3efa8d6e1f116dcfe4a62a7e1b72e5b9cd",
+      "target": "training_data.json",
+      "target_sha256": "b0fa8523c4b0b79d3c1dd6a272cd6c3efa8d6e1f116dcfe4a62a7e1b72e5b9cd",
+      "status": "unchanged"
+    },
+    {
+      "source": "uploads/apk/秩研Agent-1.0.0.apk",
+      "source_bytes": 77667,
+      "source_sha256": "906960bf61418151591d908306e9eb62e022343f941bcbc5dd9f37e3d16cb44f",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "uploads/downloads/秩研Agent-1.0.6.apk",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "uploads/apk/秩研Agent-1.0.1.apk",
+      "source_bytes": 146050,
+      "source_sha256": "baa7ef34f8c6b796a43c059536c05422d9de0840792ff7be77535c5bd00bb40c",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "uploads/downloads/秩研Agent-1.0.6.apk",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "uploads/apk/秩研Agent-1.0.2.apk",
+      "source_bytes": 146078,
+      "source_sha256": "d3309ebd47503b8bfc4bd978305896bd2dea3c03b650b126c30f002872653153",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "uploads/downloads/秩研Agent-1.0.6.apk",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "uploads/apk/秩研Agent-1.0.3.apk",
+      "source_bytes": 146535,
+      "source_sha256": "4d7e5a29a190b0d7a2550fda1d83224ceca72bc14fc45acf831ba28e5c205a52",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "uploads/downloads/秩研Agent-1.0.6.apk",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "uploads/apk/秩研Agent-1.0.4.apk",
+      "source_bytes": 146728,
+      "source_sha256": "1c309e0fde55891e3e84a64f596aa98c809807a1aff24bc80d64188769ee6b94",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "uploads/downloads/秩研Agent-1.0.6.apk",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "uploads/apk/秩研Agent-1.0.5.apk",
+      "source_bytes": 147066,
+      "source_sha256": "8b4dfe2234124dc58566159aa06621cf204a89fbfcd381f6d4ec5489c2ec37cd",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "uploads/downloads/秩研Agent-1.0.6.apk",
+      "exact_duplicate": false,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "uploads/apk/秩研Agent-1.0.6.apk",
+      "source_bytes": 147142,
+      "source_sha256": "77e083c1dc7b29c65dd2e98e60c7274f18d888316fdeece320b728aaae85b604",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "uploads/downloads/秩研Agent-1.0.6.apk",
+      "exact_duplicate": true,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "uploads/downloads/秩研Agent-1.0.6.apk",
+      "source_bytes": 147142,
+      "source_sha256": "77e083c1dc7b29c65dd2e98e60c7274f18d888316fdeece320b728aaae85b604",
+      "target": "uploads/downloads/秩研Agent-1.0.6.apk",
+      "target_sha256": "77e083c1dc7b29c65dd2e98e60c7274f18d888316fdeece320b728aaae85b604",
+      "status": "unchanged"
+    },
+    {
+      "source": "uploads/downloads/秩研Agent-对比实验报告.md",
+      "source_bytes": 5475,
+      "source_sha256": "7724345e9049b257f73ea9f65f3270b28a92db86fb683ecda1d6eca73cd7212a",
+      "target": "uploads/downloads/秩研Agent-对比实验报告.md",
+      "target_sha256": "7724345e9049b257f73ea9f65f3270b28a92db86fb683ecda1d6eca73cd7212a",
+      "status": "unchanged"
+    },
+    {
+      "source": "uploads/downloads/秩研Agent-线性代数智能助学系统-路演介绍.pptx",
+      "source_bytes": 322127,
+      "source_sha256": "852602f6441a484e189329c5c425b1644e08b0e879c9cf4bb4eab6ab72fe84a7",
+      "target": "uploads/downloads/秩研Agent-线性代数智能助学系统-路演介绍.pptx",
+      "target_sha256": "852602f6441a484e189329c5c425b1644e08b0e879c9cf4bb4eab6ab72fe84a7",
+      "status": "unchanged"
+    },
+    {
+      "source": "uploads/downloads/秩研自编样卷一-行列式与矩阵基础.md",
+      "source_bytes": 1789,
+      "source_sha256": "861811d391b7880aa5157d5242af7e661be99b4b8a1f938ddb7fa9bfb3afd9c0",
+      "target": "uploads/downloads/秩研自编样卷一-行列式与矩阵基础.md",
+      "target_sha256": "861811d391b7880aa5157d5242af7e661be99b4b8a1f938ddb7fa9bfb3afd9c0",
+      "status": "unchanged"
+    },
+    {
+      "source": "uploads/downloads/秩研自编样卷二-线性方程组与特征值.md",
+      "source_bytes": 1490,
+      "source_sha256": "86ca20bfe2312193ed4e14200bf2d4da8944718726362a7f9e5c80eed42923c7",
+      "target": "uploads/downloads/秩研自编样卷二-线性方程组与特征值.md",
+      "target_sha256": "86ca20bfe2312193ed4e14200bf2d4da8944718726362a7f9e5c80eed42923c7",
+      "status": "unchanged"
+    },
+    {
+      "source": "uploads/downloads.html",
+      "source_bytes": 20223,
+      "source_sha256": "3a55071b8bc5c1e511000b4dfdc85615b3289a802298adcc96733f8d44648202",
+      "target": "uploads/downloads.html",
+      "target_sha256": "3a55071b8bc5c1e511000b4dfdc85615b3289a802298adcc96733f8d44648202",
+      "status": "unchanged"
+    },
+    {
+      "source": "对比实验报告.md",
+      "source_bytes": 5475,
+      "source_sha256": "7724345e9049b257f73ea9f65f3270b28a92db86fb683ecda1d6eca73cd7212a",
+      "status": "removed_from_current_package",
+      "replacement_or_export_source": "uploads/downloads/秩研Agent-对比实验报告.md",
+      "exact_duplicate": true,
+      "recovery": "Original user ZIP is unchanged"
+    },
+    {
+      "source": "成果包说明.md",
+      "source_bytes": 3031,
+      "source_sha256": "5c4c38e0fb741d974f480cf53c7eb08edded2328c1d88b7b85f491e50d62db34",
+      "target": "docs/history/project-originals/成果包说明.md",
+      "target_sha256": "c2a245f97d29f2a808dca20249360cfa2a1c246cefb77fff116014cc2e12f59b",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "技术报告.md",
+      "source_bytes": 9384,
+      "source_sha256": "970858c854f85abbcf16e5400b300515a192590ac5d5e57c98472a8d58445bde",
+      "target": "docs/history/project-originals/技术报告.md",
+      "target_sha256": "5e85fcdabae96e8745cb154d7d21047f0db9c7f7a8b548b2eef739ca30497214",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "竞赛作品介绍.md",
+      "source_bytes": 27510,
+      "source_sha256": "0932d9090eb27e62413fde21304a6c53630c1b6bc935c9e55cf21520848e105a",
+      "target": "docs/history/project-originals/竞赛作品介绍.md",
+      "target_sha256": "d0650384c5ea85ad2962a316b1baf8e3f7b415f128c8f0841f031209cc4b3328",
+      "status": "moved_and_modified"
+    },
+    {
+      "source": "部署说明.md",
+      "source_bytes": 3369,
+      "source_sha256": "b5dfeaf880a422c2b27a1b028ad4a008df9f2bbcf23409be6805e5759b3dfcc1",
+      "target": "docs/history/部署说明.md",
+      "target_sha256": "d4037a4acea1503e4f5601dead17f8aedd1e9623cd9c0ff871b36b2d0f5aaf96",
+      "status": "moved_and_modified"
+    }
+  ]
+}

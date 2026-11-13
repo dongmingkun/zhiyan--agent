@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/api/version",
+    "status": 200,
+    "content_type": "application/json",
+    "last_modified": null,
+    "path": "api/version",
+    "bytes": 54,
+    "sha256": "8b080d074f02988d312c4bacc04b60eb166070c7a2123432b929c363c09d0e84",
+    "local_match": false
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/metadata.json",
+    "status": 200,
+    "content_type": "application/json",
+    "last_modified": "Tue, 18 Aug 2026 05:35:02 GMT",
+    "path": "metadata.json",
+    "bytes": 34759,
+    "sha256": "9cf8df34e3cf87b456e5d9722bb862c961ce8169230e30cb4db55fee27f18bab",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/pdfjs/pdf.min.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Tue, 18 Aug 2026 05:35:02 GMT",
+    "path": "lib/pdfjs/pdf.min.js",
+    "bytes": 320004,
+    "sha256": "5b5799e6f8c680663207ac5b42ee14eed2a406fa7af48f50c154f0c0b1566946",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/lib/pdfjs/pdf.worker.min.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=utf-8",
+    "last_modified": "Tue, 18 Aug 2026 05:35:02 GMT",
+    "path": "lib/pdfjs/pdf.worker.min.js",
+    "bytes": 1087212,
+    "sha256": "feabdf309770ed24bba31a5467836cdc8cf639c705af27d52b585b041bb8527b",
+    "local_match": true
+  },
+  {
+    "url": "https://a3a0f0972fc774ed5.app.workbuddy.link/uploads/downloads.html",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "last_modified": "Tue, 08 Sep 2026 15:58:58 GMT",
+    "path": "uploads/downloads.html",
+    "bytes": 20223,
+    "sha256": "3a55071b8bc5c1e511000b4dfdc85615b3289a802298adcc96733f8d44648202",
+    "local_match": true
+  }
+]

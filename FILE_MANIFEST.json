@@ -1,0 +1,1004 @@
+{
+  "generated_at_utc": "2026-09-11T02:07:41.007634+00:00",
+  "hash_algorithm": "SHA-256",
+  "note": "2026-09-11 最终提交版：前后端模块化拆分完成，全量自测通过（check_project/smoke 17项/engine 30题/edge 58例/浏览器验证0错误）。",
+  "excludes": [
+    "FILE_MANIFEST.json",
+    "__pycache__",
+    ".venv",
+    "work"
+  ],
+  "file_count": 198,
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 151,
+      "sha256": "0a736fc0ccd256c30b912954cca9e3a0f7efb9d0418a44dfa4eafa916c1baa38"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 2220,
+      "sha256": "5a18aa5a0f1134d2c1426581b1e5ac5753936dd9bdb0cd6105aad06bad22eeeb"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 218,
+      "sha256": "51b30bad0ad4fd642c062fb3e43b77340411d0fb00bc64418a874bce6afaefb8"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 170,
+      "sha256": "d1b0615cf771dd4a1694b7a4a632a1cb3cb6ee21f73198f1b4782858f94aa3f5"
+    },
+    {
+      "path": "Procfile",
+      "bytes": 19,
+      "sha256": "f83a2154f5810d2a04f291721f8c47aee485426f102f582af5b1a5fe7ab6dae6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8298,
+      "sha256": "10d3c07a87945cfc084bc50d95f9f9501fee7ac398752c811432334b742334be"
+    },
+    {
+      "path": "index.html",
+      "bytes": 216982,
+      "sha256": "fc02c48416fc2cd5c9941f36646ab575248c012d5a2513979f2e73f837c40635"
+    },
+    {
+      "path": "main.py",
+      "bytes": 99,
+      "sha256": "08d619dd124aa0c1dc48d2aa409435d01096684b24c92188b863034b90084e09"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1243,
+      "sha256": "f674e4af6b97059574c3f568c3e4e139f3d95312e0c2157f234d4f51085875c3"
+    },
+    {
+      "path": "requirements-ocr.txt",
+      "bytes": 111,
+      "sha256": "5bbce4c16e97a920465cc7c2bdf046d1b7d54535d93248ca382cee9c3e680a62"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 235,
+      "sha256": "88d140720c2ab12c197e2d7a89c0fbfae1a9e6c0b045d80e04c19a3edbf45150"
+    },
+    {
+      "path": "run.py",
+      "bytes": 1383,
+      "sha256": "506afdbcc7468cd74938de69a29ea8b0cfebe2fd421bd0a718239b2a6cd63242"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 3434,
+      "sha256": "9e1932ddd750f6e381d48f448ede6876144c1866946a494fd4374bda5ccc955e"
+    },
+    {
+      "path": "技术报告.md",
+      "bytes": 24340,
+      "sha256": "8f53049a02ff35d0f43708c8027a5b47aef753f12aafe6a66c96c2166d8f5d5d"
+    },
+    {
+      "path": "assets/icons/icon-180.png",
+      "bytes": 23576,
+      "sha256": "226857472cf8cb1f1211d3120ee3fb42713cc59f878f39f23c1519686071e82a"
+    },
+    {
+      "path": "assets/icons/icon-192.png",
+      "bytes": 25616,
+      "sha256": "0af390518223363615f60cb1a0c005479d06f0ce434782de0715854d5803f616"
+    },
+    {
+      "path": "assets/icons/icon-512.png",
+      "bytes": 84701,
+      "sha256": "ed62f525b3336b7aa6cb0c72f0b3a8808d5e067534def1fb6df78cb19640b3d8"
+    },
+    {
+      "path": "backend/__init__.py",
+      "bytes": 83,
+      "sha256": "dabc3a42a9d589a5470fa4bba0f022ac4edccc4c0f8bbfa3c24061a9405edf49"
+    },
+    {
+      "path": "backend/core.py",
+      "bytes": 177217,
+      "sha256": "6282edee3124f2141dc24a2beca9e034d9addee7b6cb448923c6539f2f4be52a"
+    },
+    {
+      "path": "backend/engine.py",
+      "bytes": 25805,
+      "sha256": "659fcd409ecc92aa36548f7aa417c8538d05b64979a188a0f6a5c3ce0681ad59"
+    },
+    {
+      "path": "backend/knowledge_graph.py",
+      "bytes": 6490,
+      "sha256": "c726f8b7b5a6e98bb6eba001559c964e4ba05773362f0717d13f359345e91f95"
+    },
+    {
+      "path": "backend/main.py",
+      "bytes": 7515,
+      "sha256": "191ca111cebfaa3cf724bd33eae3571905f58041ccf3e7034efdd8c3f105da5c"
+    },
+    {
+      "path": "backend/ocr_engine.py",
+      "bytes": 8676,
+      "sha256": "39fe3d3fef952c2132e806c9c344c14f728ab426471b4f042fe2e946ca493e89"
+    },
+    {
+      "path": "backend/paths.py",
+      "bytes": 521,
+      "sha256": "11de1e274d9e32da81620a010144e4c6f6eb336d3b4107852f51bc09f8611f44"
+    },
+    {
+      "path": "backend/retrieval.py",
+      "bytes": 11512,
+      "sha256": "d75543fce1e2a5560b6c824e4f92fad67e666e4d80cc9bc8a4240579a96fd47f"
+    },
+    {
+      "path": "backend/routes_admin.py",
+      "bytes": 44444,
+      "sha256": "9a204bb575547785b9921abbdd981d2ae6b800ff64206cbfe9e0e322b1213344"
+    },
+    {
+      "path": "backend/routes_auth_external.py",
+      "bytes": 23875,
+      "sha256": "c2d66b257375c75911e7deac0056c515da30b588db8d5ab5c4c5d03da863fd67"
+    },
+    {
+      "path": "backend/routes_base.py",
+      "bytes": 7848,
+      "sha256": "7e6c6c4b8562e1593f82432f5f2ca79c72c22379f17dce3e44f1b8e6b678632a"
+    },
+    {
+      "path": "backend/routes_credits.py",
+      "bytes": 14175,
+      "sha256": "944a5502ade06a7b99d216e7a0d92bb255146faec08f38b936b404a983f84671"
+    },
+    {
+      "path": "backend/routes_gamification.py",
+      "bytes": 15225,
+      "sha256": "0c4360df0db523b379f9f922aa00f627845768761d686e8dafcbe489a7231e9b"
+    },
+    {
+      "path": "backend/routes_knowledge.py",
+      "bytes": 8915,
+      "sha256": "38ab43457313c65fe61d4d1876cd093c62554598aeb105156a9c8ee214d19818"
+    },
+    {
+      "path": "backend/routes_media.py",
+      "bytes": 8431,
+      "sha256": "0d2a029d87f03a4ff99b0d60d3796ea692a1f8f173d48df2e4ff0e3138f02599"
+    },
+    {
+      "path": "backend/routes_mistakes.py",
+      "bytes": 14250,
+      "sha256": "06ee38886844ac53e6bd2c782f67924bcbf862810664a4d6546d1049befd05bd"
+    },
+    {
+      "path": "backend/routes_qa.py",
+      "bytes": 50471,
+      "sha256": "12fd9cf4450d071520c1105a532734a7b0402b55adc06bd89c531f10040db1e2"
+    },
+    {
+      "path": "backend/routes_self_path.py",
+      "bytes": 5738,
+      "sha256": "2ae0737ee91451c3e5fcdd3bfa419d365df0203f76ddea7b17ec2ea79164f99d"
+    },
+    {
+      "path": "backend/routes_social.py",
+      "bytes": 31627,
+      "sha256": "f2ec41f5b38ca9a4c286eb4cec774ac4602b7f15d188ad92986faf1e53db2df4"
+    },
+    {
+      "path": "backend/routes_student.py",
+      "bytes": 20500,
+      "sha256": "e0b263362b7ee6978e94bd0b6a921e453bff85c1431e2116618fc8b3e25c0acc"
+    },
+    {
+      "path": "backend/spark_image.py",
+      "bytes": 5787,
+      "sha256": "1b4b6bb2766e5d0eae6cd549de2988c46e6694e44df84aa976f5e2d3a58feffa"
+    },
+    {
+      "path": "css/style-01-base.css",
+      "bytes": 3603,
+      "sha256": "0b05751f825dab3309bf4e04314f0a4e38ad05e718a171f9bbe649c45cec021b"
+    },
+    {
+      "path": "css/style-02-layout.css",
+      "bytes": 8702,
+      "sha256": "261de5ef6dad49802d92636d6356efe2b6c24b411be5083758c35c238557735e"
+    },
+    {
+      "path": "css/style-03-chat.css",
+      "bytes": 19185,
+      "sha256": "63edd1e83a2d1645ba4084004f328994fa3fd2d9baea34cf6ccd0578a9f578b5"
+    },
+    {
+      "path": "css/style-04-content.css",
+      "bytes": 14225,
+      "sha256": "c50bd99257e62fa0f2bd2b2df122924c34c876d5272770015c4e9558c2aa53e5"
+    },
+    {
+      "path": "css/style-05-theme.css",
+      "bytes": 21769,
+      "sha256": "ec69e54bf98f3eab48d635c930140c38a1ebbc620e98b82bbb5f33a32be4ff5c"
+    },
+    {
+      "path": "css/style-06-auth.css",
+      "bytes": 38449,
+      "sha256": "22a6c89099f876c17f17bda9459db9d3308efb3df3fb34adc2cb85ed1c155156"
+    },
+    {
+      "path": "css/style-07-alerts-profile.css",
+      "bytes": 23177,
+      "sha256": "b7bf717616db48dfbd300db092800a0010e74ef086c24adee5e7e4609a136c0a"
+    },
+    {
+      "path": "css/style-08-social-workflow.css",
+      "bytes": 45467,
+      "sha256": "fcc183908048ab66c8deb9441429e9c145b25a94aa93f14ae47cf0bf8022f40d"
+    },
+    {
+      "path": "css/style-09-mobile.css",
+      "bytes": 93821,
+      "sha256": "7665db4276df407f15a4fd9aba86f82af57d532ed5296ea72324705ed31739c0"
+    },
+    {
+      "path": "css/style-10-profile.css",
+      "bytes": 82604,
+      "sha256": "766aa9bfd654c492e813b719f4a21035a1cf5c60de70c051b4154d3528a58eb9"
+    },
+    {
+      "path": "css/style-11-admin.css",
+      "bytes": 41824,
+      "sha256": "06869c79ce116b1ce65973ea802d5c87638236f0587b6ad9959c9d3299429d83"
+    },
+    {
+      "path": "css/style-12-polish.css",
+      "bytes": 122383,
+      "sha256": "9aaa27c14ea0f35495fc9d093f91e13c738b23e20ff92d85cadadaaa64fad45d"
+    },
+    {
+      "path": "css/ui-polish.css",
+      "bytes": 67729,
+      "sha256": "ef818c0622a1d05780b02071e0974993f771fd1430b8233a876a169a6989a34e"
+    },
+    {
+      "path": "data/knowledge_corpus.json",
+      "bytes": 2210558,
+      "sha256": "ba987f357e03b9cdeb2e2764acb3c9c06bfcb65cf7a350b44dc174779051b93f"
+    },
+    {
+      "path": "data/metadata.json",
+      "bytes": 34759,
+      "sha256": "9cf8df34e3cf87b456e5d9722bb862c961ce8169230e30cb4db55fee27f18bab"
+    },
+    {
+      "path": "data/model_config.json",
+      "bytes": 5688,
+      "sha256": "38f66028e6cea87f348bd8d9f9b29807d1ed3b4e4ddb2702b58cab63e9176ac9"
+    },
+    {
+      "path": "data/seed_data.json",
+      "bytes": 306250,
+      "sha256": "9f6befef684663a2baaff5b7df300e8c4855849dc96af4a64cd7324fbd06e3b6"
+    },
+    {
+      "path": "data/training_data.json",
+      "bytes": 1060512,
+      "sha256": "b0fa8523c4b0b79d3c1dd6a272cd6c3efa8d6e1f116dcfe4a62a7e1b72e5b9cd"
+    },
+    {
+      "path": "docs/archive/README.md",
+      "bytes": 771,
+      "sha256": "04a654d63b2fb78173aeb85fe4ef57bcd5d4887aea05f235097b9dfedc227f21"
+    },
+    {
+      "path": "docs/archive/audit/CLEANUP_REPORT.md",
+      "bytes": 8532,
+      "sha256": "72880610a2a27aacc17b417a0fc8f9c3b6e04bbb6c6db9528065f4c40d73104e"
+    },
+    {
+      "path": "docs/archive/audit/SOURCE_MAP.json",
+      "bytes": 45797,
+      "sha256": "a2231126780f999583d87bed78ac10d87f1031038bde7f4e6561ab64772ddf33"
+    },
+    {
+      "path": "docs/archive/audit/backend-smoke.json",
+      "bytes": 1797,
+      "sha256": "61dc2b1c6ee38aba5dc6d9835893255d6a5b0f15ef2c369fe78675e0e742c5a0"
+    },
+    {
+      "path": "docs/archive/audit/data-audit.md",
+      "bytes": 7939,
+      "sha256": "ec8e6b3647d850cd8a48a73005e991902fae0984fff64e3b8f205db6d0346876"
+    },
+    {
+      "path": "docs/archive/audit/data_cleanup_audit.json",
+      "bytes": 1263,
+      "sha256": "dd95ec900d2ba506227ab799c92dc35d55976ff8e47ec6c72d15082468544826"
+    },
+    {
+      "path": "docs/archive/audit/entry-cleanup.json",
+      "bytes": 1811,
+      "sha256": "36a97aa707c8558a8f9ecae1de3c1047b664ba5dfa7c30f0ed90cf6b5cd6e993"
+    },
+    {
+      "path": "docs/archive/audit/frontend-audit.md",
+      "bytes": 8556,
+      "sha256": "30d686167dc9ce7dc7c5462a2a48156064f6752954e68dbd8e8f500bee7869af"
+    },
+    {
+      "path": "docs/archive/audit/frontend-cleanup-results.json",
+      "bytes": 4979,
+      "sha256": "ce6834c07d2290ccdaea3538fb3f22ee0c09d0e3bd82b5001d7f09f100fd1a47"
+    },
+    {
+      "path": "docs/archive/audit/katex-restored.json",
+      "bytes": 3776,
+      "sha256": "aad0f38fb98d75400f7155e574f39ffef060d5abdfb396b6e1c63f8b1d874603"
+    },
+    {
+      "path": "docs/archive/audit/online-comparison.json",
+      "bytes": 9974,
+      "sha256": "aa7f21f8800775354904711b2b9b381a189ddd50116129d407cabd3147dd4e8c"
+    },
+    {
+      "path": "docs/archive/audit/online-extra.json",
+      "bytes": 1869,
+      "sha256": "85c04935c9dc50ad045f391da40223b0917f4fc806e21c581c074f394a63bdc3"
+    },
+    {
+      "path": "docs/archive/audit/restored-assets.json",
+      "bytes": 4136,
+      "sha256": "236ceb08b1fc98e351401789a6411766c6e4b8b34a66f7626dc69752ed1d1535"
+    },
+    {
+      "path": "docs/archive/audit/static-check.json",
+      "bytes": 681,
+      "sha256": "7ba98f13254779e3fe88b14cfc484e7d266df9488f6dbe5bf35133c896b45f42"
+    },
+    {
+      "path": "docs/archive/history/DEPLOY.md",
+      "bytes": 8113,
+      "sha256": "31bad5f306adb605ac86c3724467ce6e2601d3728d3c4acaa18a656d4ac0c2a6"
+    },
+    {
+      "path": "docs/archive/history/README.original.md",
+      "bytes": 4257,
+      "sha256": "2b495c9ea6e01f32f1784c78846cf0b87ab05b32c8d8581055088d8c84dce7f4"
+    },
+    {
+      "path": "docs/archive/history/部署说明.md",
+      "bytes": 3625,
+      "sha256": "d4037a4acea1503e4f5601dead17f8aedd1e9623cd9c0ff871b36b2d0f5aaf96"
+    },
+    {
+      "path": "docs/archive/history/data/self_train_state.json",
+      "bytes": 37885,
+      "sha256": "f5e9807d5d7b3e5ee3599a404860fc6190bb1ee27b953f63ad3eb115231d6c8d"
+    },
+    {
+      "path": "docs/archive/history/project-originals/README.md",
+      "bytes": 837,
+      "sha256": "df0ba79cef50807a88ab5950890daba83a81d91b4eb1a6171839a517d0abb118"
+    },
+    {
+      "path": "docs/archive/history/project-originals/成果包说明.md",
+      "bytes": 3355,
+      "sha256": "3ba7bb1c84029084aba56315f01ff6f12623d8c0e9441693fd9021bc4d79b0a6"
+    },
+    {
+      "path": "docs/archive/history/project-originals/技术报告.md",
+      "bytes": 9820,
+      "sha256": "977cfbaee06ba5322a6277c4719b1aecff2d4cc9d136c3b131351da407c93676"
+    },
+    {
+      "path": "docs/archive/history/project-originals/竞赛作品介绍.md",
+      "bytes": 28319,
+      "sha256": "58623da11ce0aba9b167f5dbcfbe2f0973a29ce6b58c897cd2120ec4840c1074"
+    },
+    {
+      "path": "js/app-01-core.js",
+      "bytes": 29615,
+      "sha256": "c651864491b15a3c4b53a9d88be0e8ede14c35a688f121c5c6b778d61ff813e9"
+    },
+    {
+      "path": "js/app-02-admin.js",
+      "bytes": 76893,
+      "sha256": "0107ebba91e63688c0ebe4cf6a7efff67ca4fa7444f42c65a77eb8fee42256ff"
+    },
+    {
+      "path": "js/app-03-auth.js",
+      "bytes": 12520,
+      "sha256": "56b06874e6830131431b4f172d218cd7f0db8b493fb8dc70abfc3beffc1774f8"
+    },
+    {
+      "path": "js/app-04-resources.js",
+      "bytes": 14315,
+      "sha256": "a99438c6dd087462a511638b737a47fcacbd0ba04e31f5b563b5bd6e46ba983a"
+    },
+    {
+      "path": "js/app-05-helpers.js",
+      "bytes": 11038,
+      "sha256": "dbe56be3760329250c11875fb1db6f519da2c492d2ca41167e111ae95605852b"
+    },
+    {
+      "path": "js/app-06-profile.js",
+      "bytes": 35578,
+      "sha256": "c82ef096f697adbc70de42358f45ff6964008c37a7725cdd288ff0d1d928b660"
+    },
+    {
+      "path": "js/app-07-profile-detail.js",
+      "bytes": 72017,
+      "sha256": "3f11a373333be4fb083df4a20daa831a983bce3090e4836a325edf537ed89b54"
+    },
+    {
+      "path": "js/app-08-social.js",
+      "bytes": 16876,
+      "sha256": "db036e29e85773e3c5033743978b04ddbd2773cc602a632141da63d7f23ce902"
+    },
+    {
+      "path": "js/app-09-chat.js",
+      "bytes": 28067,
+      "sha256": "76dff7ea370732a01dd6bf4c37786af550be8614ab225baf1566e7da5fbf3559"
+    },
+    {
+      "path": "js/app-10-chat-stream.js",
+      "bytes": 39125,
+      "sha256": "41aa495925d393c2c426e0a45687b63bc8dbdf41dfbf045f8726e860f58a741a"
+    },
+    {
+      "path": "js/app-11-chat-bubbles.js",
+      "bytes": 45521,
+      "sha256": "b6bccbde26130648437af2529ae2c53f1cef1756c918c1dfd96c9347246c5c4c"
+    },
+    {
+      "path": "js/app-12-matrix-parse.js",
+      "bytes": 94370,
+      "sha256": "25c744679b3ea8c940063c674ae6a9f52e3768927f38328470f205c60f6bd769"
+    },
+    {
+      "path": "js/app-13-utils.js",
+      "bytes": 95016,
+      "sha256": "e81b726fc4736e27ffb9adfbec5c2d4eef0ceb7c986e0ca4cd3f580abad25547"
+    },
+    {
+      "path": "js/app-14-misc.js",
+      "bytes": 116141,
+      "sha256": "a19aeebd32b8331a41657afc54a43baa9408403ace56570413752bad8928f789"
+    },
+    {
+      "path": "js/auth.v3.19.js",
+      "bytes": 33307,
+      "sha256": "4846fecf1fd9ed8bea51ac8f848e8839c07334558751a8dcb29e19394abf27a8"
+    },
+    {
+      "path": "js/chat.js",
+      "bytes": 44794,
+      "sha256": "b1a7b42daee7ab87f814e30de2308d47e2102be86ce6921d3c27c54a9577b9e7"
+    },
+    {
+      "path": "js/config.js",
+      "bytes": 172,
+      "sha256": "df829ba2017d883dcb5a265bca1abaff61575aca277bfc73af8f7a879462c12a"
+    },
+    {
+      "path": "js/exam-papers.js",
+      "bytes": 2053,
+      "sha256": "b79dc6091b0fd41f1f2dc2f54305c4691591b5373b116cac21a737e6f6202521"
+    },
+    {
+      "path": "js/floating-formulas.js",
+      "bytes": 17033,
+      "sha256": "dd6ff798b8e6fdd5b29f6c4286f5009b4e575c14004195ff42b0957e4cf235eb"
+    },
+    {
+      "path": "js/knowledge.js",
+      "bytes": 97494,
+      "sha256": "f68a20879d1cba4772bbca66d86ab37dd171e85f6d968005fdb6a3b537217d53"
+    },
+    {
+      "path": "js/math-tools.js",
+      "bytes": 23180,
+      "sha256": "b03e951c51453ae30c1dcb871adf11486adec8d8cc07cd57b2d6de3869d793f2"
+    },
+    {
+      "path": "js/quiz-bank.js",
+      "bytes": 108455,
+      "sha256": "b44fc488cf0538f78eb9afec34d59a506808266de806432a7c09c1863156bd8e"
+    },
+    {
+      "path": "js/quiz-system.v3.19.js",
+      "bytes": 13330,
+      "sha256": "fdf3aa6724203db56d397a1dccca8357499e02ed2a0ccfda44756a6bac3495c3"
+    },
+    {
+      "path": "js/quiz-ui.v3.19.js",
+      "bytes": 102863,
+      "sha256": "258bbe504a7833828f854ac8e6def598f7e0a835059347b09ef388f541e7589c"
+    },
+    {
+      "path": "js/resources.js",
+      "bytes": 26323,
+      "sha256": "96f8789652009170a7a10c4473b55127a8c97fd372c870761d0c8eada1a43591"
+    },
+    {
+      "path": "js/social.js",
+      "bytes": 31542,
+      "sha256": "ba1cf6940ed789b2ecfddb5516c506b1319952485ee97b6465d31b470c504bec"
+    },
+    {
+      "path": "js/visualizer.js",
+      "bytes": 18192,
+      "sha256": "3cd8a614338b4c219ebee1edaca7045836b1dc09a2420935fb0a8be147542063"
+    },
+    {
+      "path": "lib/echarts/LICENSE",
+      "bytes": 11671,
+      "sha256": "a9fe93f43b5f3c15166a3e11a1fac87222ef6fe3786a0fe4b968e5685ff5cbd8"
+    },
+    {
+      "path": "lib/echarts/echarts.min.js",
+      "bytes": 1024740,
+      "sha256": "1156429a16a38cb8604dcc6518c19406d4226142d908f8edd2e3531443c54d19"
+    },
+    {
+      "path": "lib/katex/LICENSE",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "path": "lib/katex/auto-render.min.js",
+      "bytes": 3478,
+      "sha256": "9cb8dacfc086c2966c9ec4ba54f4a2dc43b7cbe2b33cec1a2743d886c7fb47a7"
+    },
+    {
+      "path": "lib/katex/katex.min.css",
+      "bytes": 23196,
+      "sha256": "505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3"
+    },
+    {
+      "path": "lib/katex/katex.min.js",
+      "bytes": 277038,
+      "sha256": "dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_AMS-Regular.ttf",
+      "bytes": 63632,
+      "sha256": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_AMS-Regular.woff",
+      "bytes": 33516,
+      "sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_AMS-Regular.woff2",
+      "bytes": 28076,
+      "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Caligraphic-Bold.ttf",
+      "bytes": 12368,
+      "sha256": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Caligraphic-Bold.woff",
+      "bytes": 7716,
+      "sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+      "bytes": 6912,
+      "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Caligraphic-Regular.ttf",
+      "bytes": 12344,
+      "sha256": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Caligraphic-Regular.woff",
+      "bytes": 7656,
+      "sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+      "bytes": 6908,
+      "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Fraktur-Bold.ttf",
+      "bytes": 19584,
+      "sha256": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Fraktur-Bold.woff",
+      "bytes": 13296,
+      "sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+      "bytes": 11348,
+      "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Fraktur-Regular.ttf",
+      "bytes": 19572,
+      "sha256": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Fraktur-Regular.woff",
+      "bytes": 13208,
+      "sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+      "bytes": 11316,
+      "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-Bold.ttf",
+      "bytes": 51336,
+      "sha256": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-Bold.woff",
+      "bytes": 29912,
+      "sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-Bold.woff2",
+      "bytes": 25324,
+      "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-BoldItalic.ttf",
+      "bytes": 32968,
+      "sha256": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-BoldItalic.woff",
+      "bytes": 19412,
+      "sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-BoldItalic.woff2",
+      "bytes": 16780,
+      "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-Italic.ttf",
+      "bytes": 33580,
+      "sha256": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-Italic.woff",
+      "bytes": 19676,
+      "sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-Italic.woff2",
+      "bytes": 16988,
+      "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-Regular.ttf",
+      "bytes": 53580,
+      "sha256": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-Regular.woff",
+      "bytes": 30772,
+      "sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Main-Regular.woff2",
+      "bytes": 26272,
+      "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Math-BoldItalic.ttf",
+      "bytes": 31196,
+      "sha256": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Math-BoldItalic.woff",
+      "bytes": 18668,
+      "sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Math-BoldItalic.woff2",
+      "bytes": 16400,
+      "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Math-Italic.ttf",
+      "bytes": 31308,
+      "sha256": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Math-Italic.woff",
+      "bytes": 18748,
+      "sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Math-Italic.woff2",
+      "bytes": 16440,
+      "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_SansSerif-Bold.ttf",
+      "bytes": 24504,
+      "sha256": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_SansSerif-Bold.woff",
+      "bytes": 14408,
+      "sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_SansSerif-Bold.woff2",
+      "bytes": 12216,
+      "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_SansSerif-Italic.ttf",
+      "bytes": 22364,
+      "sha256": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_SansSerif-Italic.woff",
+      "bytes": 14112,
+      "sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_SansSerif-Italic.woff2",
+      "bytes": 12028,
+      "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_SansSerif-Regular.ttf",
+      "bytes": 19436,
+      "sha256": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_SansSerif-Regular.woff",
+      "bytes": 12316,
+      "sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+      "bytes": 10344,
+      "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Script-Regular.ttf",
+      "bytes": 16648,
+      "sha256": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Script-Regular.woff",
+      "bytes": 10588,
+      "sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Script-Regular.woff2",
+      "bytes": 9644,
+      "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size1-Regular.ttf",
+      "bytes": 12228,
+      "sha256": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size1-Regular.woff",
+      "bytes": 6496,
+      "sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size1-Regular.woff2",
+      "bytes": 5468,
+      "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size2-Regular.ttf",
+      "bytes": 11508,
+      "sha256": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size2-Regular.woff",
+      "bytes": 6188,
+      "sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size2-Regular.woff2",
+      "bytes": 5208,
+      "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size3-Regular.ttf",
+      "bytes": 7588,
+      "sha256": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size3-Regular.woff",
+      "bytes": 4420,
+      "sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size3-Regular.woff2",
+      "bytes": 3624,
+      "sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size4-Regular.ttf",
+      "bytes": 10364,
+      "sha256": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size4-Regular.woff",
+      "bytes": 5980,
+      "sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Size4-Regular.woff2",
+      "bytes": 4928,
+      "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Typewriter-Regular.ttf",
+      "bytes": 27556,
+      "sha256": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Typewriter-Regular.woff",
+      "bytes": 16028,
+      "sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7"
+    },
+    {
+      "path": "lib/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+      "bytes": 13568,
+      "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b"
+    },
+    {
+      "path": "lib/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "lib/three/three.min.js",
+      "bytes": 669884,
+      "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "bytes": 76,
+      "sha256": "8093939dc92e1ded92acad7176339d648874350c17beb6efe78cabe92ddf6bfb"
+    },
+    {
+      "path": "scripts/build_corpus.js",
+      "bytes": 2630,
+      "sha256": "39d350ebcd35d74de062161b39f44490c1facd27767294ed8f3a2bcf12cbed73"
+    },
+    {
+      "path": "scripts/check_project.py",
+      "bytes": 9885,
+      "sha256": "92972e123db25dcd35123221c9b11bfb14afaacfcbf4b1dcb951c7949e8186b9"
+    },
+    {
+      "path": "scripts/clean_db.py",
+      "bytes": 15192,
+      "sha256": "0a70d870302920ef2c0e3008091fca7bd7759db96d4f25f9ef145210dd9f15eb"
+    },
+    {
+      "path": "scripts/cleanup_ai_corpus.py",
+      "bytes": 3397,
+      "sha256": "eb46e7464857488fb78f3412dab9a8ba615724b73ef7fd8b680dbbc5364cb090"
+    },
+    {
+      "path": "scripts/edge_tests.py",
+      "bytes": 7847,
+      "sha256": "2324f3f6e320a674bdb396cf4b04b162cfbea8939eadad1afd3130cbe4fe6390"
+    },
+    {
+      "path": "scripts/engine_eval.py",
+      "bytes": 3465,
+      "sha256": "d837a0aa9b7f4177a5da21f9ddf4b909042d4682c31989401ec218ec7c03699c"
+    },
+    {
+      "path": "scripts/generate_corpus.py",
+      "bytes": 78673,
+      "sha256": "717ef52053d858c618dbfdb61a5ace4d70a3521fe5885bedb0dc5851e91e9650"
+    },
+    {
+      "path": "scripts/generate_training_data.py",
+      "bytes": 12385,
+      "sha256": "8ad18401085d5e82bf7de12f52032a208fb7974c4d2ee338f7cb3be0ae3b1175"
+    },
+    {
+      "path": "scripts/manage_proc.py",
+      "bytes": 3389,
+      "sha256": "3db1940697553db419015c9d0cb4c3af4ffee345fca6a2a537eca0dd8b69b9d6"
+    },
+    {
+      "path": "scripts/seed_demo_account.py",
+      "bytes": 12524,
+      "sha256": "247f5c5a7e8de4e901054802f21f9419adcda12057e9c28008775a14406b8edf"
+    },
+    {
+      "path": "scripts/smoke_test.py",
+      "bytes": 10878,
+      "sha256": "3a52f784b4c109cb6103b98d609c8a679d9a71ee37366acd6e324752f22070a5"
+    },
+    {
+      "path": "training/README.md",
+      "bytes": 1984,
+      "sha256": "78fea948e4d508f490eb3a2324d2a6f36bef9c35c565637b94bf95460bdd59ee"
+    },
+    {
+      "path": "training/__init__.py",
+      "bytes": 58,
+      "sha256": "683d5672875bca535b0739d7c8fd6fba8c3d4b53a99161b6fd72632dab82d0cb"
+    },
+    {
+      "path": "training/build_sft_dataset.py",
+      "bytes": 8203,
+      "sha256": "92b507900eff393b8eca2716be89b42c288fda93deb9a2f99081705e5cbf9be3"
+    },
+    {
+      "path": "training/guard_train.py",
+      "bytes": 4601,
+      "sha256": "977ab4b3155c648d25063d683183b4c3e82f43fa6b51f3a09af645e9e7bf8108"
+    },
+    {
+      "path": "training/lora_finetune.py",
+      "bytes": 8468,
+      "sha256": "74d4cce2a428d2f27b42d0d611b1904cce4f8f04d91907e544640627593614fa"
+    },
+    {
+      "path": "training/self_train.py",
+      "bytes": 25169,
+      "sha256": "e87079f8f0be1db2cc624da0c13f5eca47e883e811e6b95c3c9748e660242753"
+    },
+    {
+      "path": "training/sft_combined.json",
+      "bytes": 5130001,
+      "sha256": "76d54ba5e1218b54d821f4b9641290bcd3939a6509359d1e97f892175af67051"
+    },
+    {
+      "path": "uploads/downloads.html",
+      "bytes": 20223,
+      "sha256": "3a55071b8bc5c1e511000b4dfdc85615b3289a802298adcc96733f8d44648202"
+    },
+    {
+      "path": "uploads/downloads/秩研Agent-1.0.6.apk",
+      "bytes": 147142,
+      "sha256": "77e083c1dc7b29c65dd2e98e60c7274f18d888316fdeece320b728aaae85b604"
+    },
+    {
+      "path": "uploads/downloads/秩研Agent-对比实验报告.md",
+      "bytes": 5475,
+      "sha256": "7724345e9049b257f73ea9f65f3270b28a92db86fb683ecda1d6eca73cd7212a"
+    },
+    {
+      "path": "uploads/downloads/秩研Agent-线性代数智能助学系统-路演介绍.pptx",
+      "bytes": 322127,
+      "sha256": "852602f6441a484e189329c5c425b1644e08b0e879c9cf4bb4eab6ab72fe84a7"
+    },
+    {
+      "path": "uploads/downloads/秩研自编样卷一-行列式与矩阵基础.md",
+      "bytes": 1789,
+      "sha256": "861811d391b7880aa5157d5242af7e661be99b4b8a1f938ddb7fa9bfb3afd9c0"
+    },
+    {
+      "path": "uploads/downloads/秩研自编样卷二-线性方程组与特征值.md",
+      "bytes": 1490,
+      "sha256": "86ca20bfe2312193ed4e14200bf2d4da8944718726362a7f9e5c80eed42923c7"
+    }
+  ]
+}

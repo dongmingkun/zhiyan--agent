@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "root": "C:\\Users\\Kevin\\Documents\\Codex\\2026-09-10\\https-a3a0f0972fc774ed5-app-workbuddy-link-https\\outputs\\zhiyan-agent",
+  "counts": {
+    "active_js_files": 19,
+    "css_files": 3,
+    "external_or_embedded_references": 1,
+    "html_files": 2,
+    "inline_js_blocks": 7,
+    "javascript_checks_run": 26,
+    "json_files": 9,
+    "local_reference_occurrences": 90,
+    "manifest_files": 1,
+    "manifest_icon_references": 5,
+    "python_files": 24,
+    "unique_local_assets": 85
+  },
+  "errors": [],
+  "notes": [],
+  "scope": "Static syntax and referenced local files only; no project imports, network access, or runtime writes."
+}
